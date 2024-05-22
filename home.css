@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0;
+  
+    background-image: url(https://pbs.twimg.com/media/GOLZkava8AA-ilE?format=jpg&name=large);
+    background-position: contain;
+    background-size: cover;
+  }
+  
+  .ajfl {
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+  }
+  
+  .ahaxhd {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+  }
+  
+  footer p {
+    background: #333;
+    width: 100vw;
+    height: 5vh;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  #menu {
+    width: 70vw;
+    height: 60vh;
+    display: grid;
+    background: none;
+  }
+  
+  #contents {
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    place-items: center;
+  }
+  
+  #contents > a {
+    background: gray;
+    width: 30vw;
+    height: 10vh;
+  }
+  
+  #contents .dalla_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .icy_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .wannabe_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .notshy_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .mafia_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .loco_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .sneakers_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .cheshire_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .cake_img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #contents .unthouchable_img {
+    width: 100%;
+    height: 100%;
+  }
