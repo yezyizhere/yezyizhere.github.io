@@ -76,7 +76,7 @@ header {
 }
 
 /* grid 개수 변경 */
-@media (min-width: 450px) {
+@media (min-width: 300px) {
   .content { grid-template-columns: repeat(2,1fr); }
 }
 
