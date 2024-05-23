@@ -91,7 +91,7 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.1);
   
-  min-width: 170px;
+  min-width: 150px;
   height: 21vh;
   overflow-y: auto;
   
