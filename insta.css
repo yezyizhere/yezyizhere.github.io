@@ -42,6 +42,12 @@ header {
   text-decoration: none; 
   color: inherit;
 }
+
+#yeji {
+  width: 400px;
+  background: none;
+}
+
 /* ------------------------------------------------ */
 
 
@@ -76,7 +82,7 @@ header {
 }
 
 /* grid 개수 변경 */
-@media (min-width: 300px) {
+@media (min-width: 450px) {
   .content { grid-template-columns: repeat(2,1fr); }
 }
 
@@ -91,14 +97,14 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.1);
   
-  min-width: 150px;
+  min-width: 170px;
   height: 21vh;
   overflow-y: auto;
   
   border: 1px solid gray;
   text-align: left;
   padding: 10px;
-  margin: 3px;
+  margin: 10px;
 }
 
 /* 개별 카드 제목 */

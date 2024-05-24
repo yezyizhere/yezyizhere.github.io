@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+}
+
+/* FONT */
+@font-face {
+    font-family: 'Dovemayo_gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.1/Dovemayo_gothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ~370px */
+
+/*********************** header **********************/
+.top {
+  height: 100px;
+  max-width: 370px;
+  background: #273036;
+  
+  display: flex;
+  align-items: center;
+  border-radius: 0 0 15px 15px;
+}
+
+#yeji {
+  height: 50px;
+  margin-left: 15px;
+}
+
+.icon-box {
+  z-index: 1;
+  color: white;
+  margin-left: 40px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box i {
+  margin-right: 30px;
+  font-size: 30px;
+  
+  text-decoration: none; 
+  color: white;
+}
+/******************************************************/
+
+/*******************container-1/txt ******************/
+
+.container-1 {
+  width: 370px;
+  height: 30px;
+  font-family: "Dovemayo_gothic", sans-serif;
+  display: grid;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.3);
+}
+
+#m {
+  margin-left: 30px;
+}
+
+/******************************************************/
+
+
+/****************** container-2/menu ******************/
+
+.container-2 {
+  width: 370px;
+  height: 370px;
+  display: grid;
+  justify-content: center;
+  
+}
+
+.menu {
+  width: 320px;
+  height: 320px;
+  box-sizing: border-box;
+  border: 1px solid silver;
+  background: #273036;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px 150px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.item1 a {
+  width: 140px;
+  height: 140px;
+  margin-left: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #696eff;
+  font-size: 50px;
+  border: solid 1px silver;
+  background: rgba(255,255,192,0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.1);
+}
+
+.item2 a {
+  width: 140px;
+  height: 140px;
+  margin-left: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ff0f7b;
+  font-size: 50px;
+  border: solid 1px silver;
+  background: rgba(255,255,192,0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.1);
+}
+
+.item3 a {
+  width: 140px;
+  height: 140px;
+  margin-left: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #f7f779;
+  font-size: 50px;
+  border: solid 1px silver;
+  background: rgba(255,255,192,0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.1);
+}
+
+.item4 a {
+  width: 140px;
+  height: 140px;
+  margin-left: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #0061ff;
+  font-size: 50px;
+  border: solid 1px silver;
+  background: rgba(255,255,192,0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.1);
+}
+
+/******************************************/
+
+.container-3 {
+  width: 370px;
+  height: 30px;
+  font-family: "Dovemayo_gothic", sans-serif;
+  display: grid;
+  align-items: center;
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.3);
+}
+
+#m {
+  margin-left: 30px;
+}
