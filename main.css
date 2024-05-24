@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+  }
+  
+  /* ~300px */
+  
+  .top {
+    height: 100px;
+    background: #273036;
+    
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  #yeji {
+    height: 50px;
+    margin-left: 5px;
+  }
+  
+  .icon-box {
+    z-index: 1;
+    color: white;
+    margin-left: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-box i {
+    margin-right: 15px;
+    font-size: 25px;
+    
+    text-decoration: none; 
+    color: white;
+  }
+  
+  body {
+    background: white;
+  }
