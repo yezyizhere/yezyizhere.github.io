@@ -6,6 +6,7 @@
 
 .top {
   height: 100px;
+  max-width: 370px;
   background: #273036;
   
   display: flex;
@@ -21,7 +22,7 @@
 .icon-box {
   z-index: 1;
   color: white;
-  margin-left: 30px;
+  margin-left: 40px;
   
   display: flex;
   align-items: center;
@@ -36,6 +37,9 @@
   color: white;
 }
 
-body {
-  background: white;
+.container {
+  background: orange;
+  max-width: 370px;
+  height: 100vh;
+/*   overflow-y: auto; */
 }
