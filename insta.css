@@ -42,12 +42,6 @@ header {
   text-decoration: none; 
   color: inherit;
 }
-
-#yeji {
-  width: 400px;
-  background: none;
-}
-
 /* ------------------------------------------------ */
 
 
@@ -75,14 +69,14 @@ header {
   /* 개수변경 기본  */
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 3px;
+  grid-gap: 1px;
   
   /* 스크롤 제작 */
   overflow-y: auto;
 }
 
 /* grid 개수 변경 */
-@media (min-width: 450px) {
+@media (min-width: 300px) {
   .content { grid-template-columns: repeat(2,1fr); }
 }
 
@@ -97,14 +91,13 @@ header {
   backdrop-filter: blur(10px);
   box-shadow: 2px 7px 15px 8px rgba(0,0,0,0.1);
   
-  min-width: 170px;
-  height: 21vh;
+  min-width: 150px;
+  min-height: 260px;
   overflow-y: auto;
-  
   border: 1px solid gray;
   text-align: left;
   padding: 10px;
-  margin: 10px;
+  margin: 3px;
 }
 
 /* 개별 카드 제목 */
@@ -167,3 +160,8 @@ footer {
   color: white;
 }
 /* ------------------------------------------------ */
+
+#yeji {
+  width: 300px;
+  background: none;
+}
