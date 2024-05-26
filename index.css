@@ -191,10 +191,9 @@ header .h-box li {
 /************ container3 ************/
 
 .b-img {
-  height: 150px;
-  width: 410px;
+  height: 100px;
+  width: 300px;
   margin-top: 10px;
-  margin-left: -100px;
 }
 
 /************************************/
