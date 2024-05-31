@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ver 1.2b</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="music.js"></script>
+</head>
+<body>
+    
+    <!-- 파란색 영역 -->
+    <div class="bg-blue-600 p-4">
+        <!-- 파란색 안 글자들 -->
+        <div class="text-white">
+            Hello, MIDZY
+        </div>
+        <div class="font-bold text-2xl text-white">
+            Push Play 넌 듣기만 해 <br>네 맘을 둥둥둥 울려줄게
+        </div>
+        <div class="flex items-right justify-end">
+            <div class="text-1xl text-white text-right">
+                <i>B[OO]M-BOXX 中</i>
+            </div>
+        </div>
+        <!-- 파란색 안 노래 검색창 -->
+        <div class="relative">
+            <!-- 돋보기 -->
+            <button class="text-blue-600 absolute left-4 top-7">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- 글씨 -->
+            <input type="text" id="text" class="rounded-md w-full h-12 mt-4 text-sm pl-11" placeholder="노래를 검색해보세요" onkeydown="enterSearch()">
+        </div>
+    </div>
+    
+    <!-- 카테고리 -->
+    <div class="p-4 flex justify-between">
+        <!-- 플리 글씨 -->
+        <div class="font-bold">
+            Play List
+        </div>
+
+        <!-- 전체보기 글씨 -->
+        <button class="text-xs text-blue-600">
+            Born To Be
+        </button>
+    </div>
+
+    <!-- 아이콘 메뉴 -->
+    <div class="px-4">
+        <div class="grid grid-cols-4 gap-4">
+            
+            <!-- 개별 아이콘 -->
+            <div>
+                <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066915,37066917,37066918,37066919,37066920,37066921,37066922,37066923,37066924"><i class="fa-solid fa-music"></i></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    멜론<br>Android
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="cromegenie://scan/?landing_type=31&landing_target=104916259;104916260;104916261;104916262;104916263;104916264;104916265;104916266;104916267;104916268"><i class="fa-brands fa-goodreads-g"></i></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    지니뮤직<br>Android
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="bugs3://app/tracks/lists?title=전체듣기&miniplay=Y&track_ids=6226428|6228690|6227821|6228691|6226906|6228692|6227170|6227232|6227513|6228693"><i class="fa-solid fa-b"></i></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    벅스 <br>Android
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="vibe://listen?version=3&trackIds=81984904,81984905,81984906,81984907,81984908,81984909,81984910,81984911,81984912,81984913"><i class="fa-solid fa-heart"></i></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    VIBE
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066915,37066917,37066918,37066919,37066920,37066921,37066922,37066923,37066924"><i class="fa-brands fa-apple"></i></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    멜론<br>ios
+                </div>
+            </div>
+            
+            <div>
+                <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="melonipad://play/?ctype=1&menuid=0&cid=1&cid=37066916,37066915,37066917,37066918,37066919,37066920,37066921,37066922,37066923,37066924"><i class="fa-brands fa-app-store-ios"></i></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    멜론<br>i-pad
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="ktolleh00167://landing/?landing_type=31&landing_target=104916259;104916260;104916261;104916262;104916263;104916264;104916265;104916266;104916267;104916268"><i class="fa-brands fa-goodreads-g"></i></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    지니뮤직 <br>ios
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.genie.co.kr/player/shareProcessV2?xgnm=104916259;104916260;104916261;104916262;104916263;104916264;104916265;104916266;104916267;104916268"><i class="fa-brands fa-goodreads-g"></i></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    지니뮤직 <br>PC
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- 한국 최근 곡 -->
+    <div class="p-4 flex justify-between">
+        <!-- 최신 글 -->
+        <div class="font-bold">
+            Album
+        </div>
+
+        <!-- 전체보기 글씨 -->
+        <button class="text-xs text-blue-600" id="btn">
+            See All
+        </button>
+    </div>
+
+    <!-- 한국 최근곡 앨범 사진 -->
+    <div class="px-4 overflow-x-scroll" id="main-tap">
+        <div class="flex gap-4" id="sub-tap">
+            
+            <!-- 개별 액자 -->
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=10250473"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm/album/images/102/50/473/10250473_500.jpg?87c609bcbfac930b0cce1f692f7bff4c/melon/resize/282/sharpen/0x1" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    달라달라
+                </div>
+            </div>
+            
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=10312251"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm/album/images/103/12/251/10312251_500.jpg?c86b1363452350da88ea588f5e50b921/melon/resize/282/quality/80/optimize" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    ICY
+                </div>
+            </div>
+            
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=10400522"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm2/album/images/104/00/522/10400522_20200309153009_500.jpg?84df9aca6a6aff2443cd8c22495d5b05/melon/resize/282/quality/80/optimize" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    WANNABE
+                </div>
+            </div>
+
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=10476630"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm2/album/images/104/76/630/10476630_20200818114209_500.jpg?d7bc05855d230f35f8b8c864a41f8d86/melon/resize/282/sharpen/0x1" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    NOT SHY
+                </div>
+            </div>
+
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=10600760"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm2/album/images/106/00/760/10600760_20210429213541_500.jpg?4fb70096b3910c7eb99311aa1ef0908b/melon/resize/282/quality/80/optimize" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    GUESS WHO
+                </div>
+            </div>
+
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=10721169"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm2/album/images/107/21/169/10721169_20210923195418_500.jpg?5fde9ecf53ea2dd1045b94701b60e753/melon/resize/282/quality/80/optimize" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    CRAZY IN LOVE
+                </div>
+            </div>
+
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=11004992"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm2/album/images/110/04/992/11004992_20220722175827_500.jpg?7925173e004f56f8d081fdec56fbaa15/melon/resize/282/quality/80/optimize" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    CHECKMATE
+                </div>
+            </div>
+            
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=11112176"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm2/album/images/111/12/176/11112176_20221129102941_500.jpg?464f37ad4bf227b507ce6d3580547b9b/melon/resize/282/quality/80/optimize" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    CHESHIRE
+                </div>
+            </div>
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=11277647"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm2/album/images/112/77/647/11277647_20230731184013_500.jpg?YUV420-90/melon/resize/282" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    KILL MY DOUBT
+                </div>
+            </div>
+            <div>
+                <div class="w-20 bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+                    <a href="https://www.melon.com/album/detail.htm?albumId=11386125"><img class="rounded-lg" src="https://cdnimg.melon.co.kr/cm2/album/images/113/86/125/11386125_20240108182050_500.jpg?YUV422-90/melon/resize/282" alt=""></a>
+                </div>
+                <div class="text-xs text-center mt-1">
+                    BORN TO BE
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<!-- <div class="p-4 flex justify-between">
+    <div class="font-bold">
+        Play List
+    </div>
+
+    <button class="text-xs text-blue-600">
+        Born To Be
+    </button>
+</div> -->
+
+<!-- <div>
+    <div class="bg-gray-200 text-2xl rounded-md aspect-square flex items-center justify-center">
+        
+    </div>
+    <div class="text-xs text-center mt-1">
+        멜론
+    </div>
+</div> -->
