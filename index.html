@@ -1,111 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="./picture/kkaeng.png"/> 
-        <link rel="apple-touch-icon" href="./picture/kkaeng.png"/> 
-        <meta property="og:image" content="./picture/ggaeng.jpg">
-        <title>YEJI's Note</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-        <!-- <script src="index.js"></script> -->
-      </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITZY Like That</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-<img>
+<body>
+    <!-- 부모속성/전체화면/배경보라색 -->
+    <div class="relative h-screen bg-gradient-to-b from-violet-700 from-10% via-violet-900 via-30% to-violet-900 to-90%">
 
-    <!-- 헤더 메뉴 -->
-    <div class="bg-zinc-800 w-screen">
-        <div class="text-white flex items-center justify-between p-4">
-            <a href="https://www.instagram.com/yezyizhere"><img class="w-40" src="./picture/title_img.PNG" alt="YEZYisHERE"></a>
+        <!-- 이미지 선택 -->
+        <div class="absolute mt-5 ml-3 flex items-center">
 
-            <div class="flex">
-                <a id="div-contact" href="https://open.kakao.com/me/dang0526">
-                    <i class="text-white text-2xl fa-regular fa-envelope mr-4"></i>
-                </a>
-                
-                <button>
-                    <i class="text-white text-2xl fa-solid fa-bars"></i>
-                </button>
+            <!-- 프로필사진 -->
+            <img id="mainProfileImg" src="./profile/profile1.jpg" alt="YEJI" class="w-20 h-20 rounded-full cursor-pointer">
+            <div id="choicesContainer" class="hidden flex ml-2 gap-3">
+                <img src="./profile/profile2.jpg" alt="LIA" class="choice-img w-12 h-12 rounded-full cursor-pointer">
+                <img src="./profile/profile3.jpg" alt="RYUJIN" class="choice-img w-12 h-12 rounded-full cursor-pointer">
+                <img src="./profile/profile4.jpg" alt="CHAERYEONG" class="choice-img w-12 h-12 rounded-full cursor-pointer">
+                <img src="./profile/profile5.jpg" alt="YUNA" class="choice-img w-12 h-12 rounded-full cursor-pointer">
+            </div>
+
+            <!-- 프로필인사 -->
+            <div id="textbox">
+                <p class="text-white ml-4 text-2xl" id="hi">안녕하세요</p>
+                <p class="text-black ml-4 mt-1 text-2xl font-bold" id="YEJI">검하단♥</p>
+                <p class="text-blue-300 ml-4 mt-1 text-2xl font-bold" id="LIA">믿지렁이♥</p>
+                <p class="text-rose-500 ml-4 mt-1 text-2xl font-bold" id="RYUJIN">캔디단♥</p>
+                <p class="text-stone-400 ml-4 mt-1 text-2xl font-bold" id="CHAERYEONG">크림단♥</p>
+                <p class="text-pink-500 ml-4 mt-1 text-2xl font-bold" id="YUNA">사랑단♥</p>
             </div>
         </div>
+
+        <!-- 띵언 -->
+        <div class="absolute mt-28 ml-2 text-white">
+            <p class="italic text-xl" id="YEJI">"나를 믿자"</p>
+            <p class="italic text-xl" id="LIA">"나한테 의미 있는 행복한 삶을 살자"</p>
+            <p class="italic text-xl" id="RYUJIN">"인생사 새옹지마"</p>
+            <p class="italic text-xl" id="CHAERYEONG">"좋은 사람이 되자"</p>
+            <p class="italic text-xl" id="YUNA">"사실과 생각을 구분하자"</p>
+        </div>
+
+        <!-- 자식속성/배경흰색/둥근모서리/위여백48/꽉찬화면 -->
+        <div class="absolute bg-white rounded-t-2xl mt-40 w-screen h-screen">
+            <div class="px-4 mt-5">
+                <h1 class="text-center text-2xl">바로가기</h1>
+                <div class="mt-5 grid grid-cols-3 gap-4">
+        
+                    <div>
+                        <button class="bg-white text-2xl rounded-md aspect-square flex items-center justify-center border-solid border-2 border-black w-24 h-24">
+                            <a href="./instagram/instagram.html"><i class="fa-brands fa-instagram text-5xl text-red-500"></i></a>
+                        </button>
+                        
+                        <div class="text-xl text-center mt-1">Instagram</div>
+                        <div class="text-xs text-center mt-1"><i>사진 다운로드</i></div>
+                    </div>
+        
+                    <div>
+                        <button class="bg-white text-2xl rounded-md aspect-square flex items-center justify-center border-solid border-2 border-black w-24 h-24">
+                            <a href="https://itzy.jype.com/"><i class="fa-solid fa-network-wired text-5xl text-blue-400"></i></a>
+                        </button>
+                        
+                        <div class="text-xl text-center mt-1">Official</div>
+                        <div class="text-xs text-center mt-1"><i>공식 홈페이지</i></div>
+                    </div>
+
+                    <div>
+                        <button class="bg-white text-2xl rounded-md aspect-square flex items-center justify-center border-solid border-2 border-black w-24 h-24">
+                            <a href="./music/music.html"><i class="fa-solid fa-guitar text-orange-950 text-5xl"></i></a>
+                        </button>
+                        
+                        <div class="text-xl text-center mt-1">Play List</div>
+                        <div class="text-xs text-center mt-1"><i>음원 정보 & <br>스트리밍</i></div>
+                    </div>
+
+                    <div>
+                        <button class="bg-white text-2xl rounded-md aspect-square flex items-center justify-center border-solid border-2 border-black w-24 h-24">
+                            <a href="https://open.kakao.com/o/gGv1cZpc"><i class="text-yellow-400 fa-regular fa-comment text-5xl"></i></a>
+                        </button>
+                        
+                        <div class="text-xl text-center mt-1">Kakao Talk</div>
+                        <div class="text-xs text-center mt-1"><i>카카오톡 <br>오픈채팅</i></div>
+                    </div>
+
+                    <div>
+                        <button class="bg-white text-2xl rounded-md aspect-square flex items-center justify-center border-solid border-2 border-black w-24 h-24">
+                            <a href="https://drive.google.com/drive/folders/1SDZYsASrvhAc0R3ZjpyEgPjP-E13OVYr"><i class="text-violet-700 fa-regular fa-file-image text-5xl"></i></a>
+                        </button>
+                        
+                        <div class="text-xl text-center mt-1">Background</div>
+                        <div class="text-xs text-center mt-1"><i>핸드폰 <br>배경화면</i></div>
+                    </div>
+
+                    <div>
+                        <button class="bg-white text-2xl rounded-md aspect-square flex items-center justify-center border-solid border-2 border-black w-24 h-24">
+                            <a href="https://koreayejiloversclub.tistory.com/m/17"></a><i class="fa-regular fa-snowflake text-5xl"></i></a>
+                        </button>
+                        
+                        <div class="text-xl text-center mt-1">Theme</div>
+                        <div class="text-xs text-center mt-1"><i>눈덩이 테마</i></div>
+                    </div>
+
+                </div>
+            </div>
+        
+            <div class="mt-4">
+            <hr />
+            <div class="text-black text-sm mt-5 text-center font-semibold">
+                Contact : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
+                <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 )
+                <br>Theme : 한국예지동아리 ( <i class="text-sky-400 fa-brands fa-twitter"></i> yejisupporters )
+            </div>
+        </div>
+        
     </div>
+
+    <!-- 하단바/항상고정/내비기능 -->
+    <footer class="fixed bottom-0 left-0 w-full bg-stone-300 text-white p-4">
+        <div class="container mx-auto text-center">
+          © 2024 Your Company. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("mainProfileImg").addEventListener('click', function() {
+            const choicesContainer = document.getElementById("choicesContainer");
+            choicesContainer.classList.toggle('hidden');
+            hideProfileGreetings();
+        });
     
-    <!-- 인스타그램 -->
-    <div class="grid place-content-center bg-zinc-950 p-4">
-        <div class="text-white text-2xl text-center">
-            <i class="text-rose-500 fa-brands fa-instagram"></i> Instagram
-        </div>
-        <div class="text-white text-xl text-center mt-1">
-            기간별 사진 모음
-        </div>
-        <a href="./instagram/instagram.html"><img class="border-2 border-solid border-blue-500 rounded-lg mt-2 w-64 h-40" src="./picture/yeji1.jpg" alt="인스타그램 바로가기"></a>
-    </div>
+        const choiceImages = document.querySelectorAll(".choice-img");
     
-    <!-- 게임 -->
-    <div class="grid place-content-center p-4">
-        <div class="text-black text-2xl text-center">
-            <i class="text-blue-600 fa-solid fa-gamepad"></i> GAME
-        </div>
-        <div class="text-black text-xl text-center mt-1">
-            예지 수박게임
-        </div>
-        <a href="https://daxigua-master-springlove0628.vercel.app/"><img class="border-2 border-solid border-blue-500 rounded-lg mt-2 w-64 h-40" src="./picture/yeji2.jpg" alt="게임 바로가기"></a>
-    </div>
-
-    <!-- 음원 -->
-    <div class="grid place-content-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4">
-        <div class="text-white text-2xl text-center">
-            <i class="text-green-500 fa-solid fa-guitar"></i> Play List
-        </div>
-        <div class="text-white text-xl text-center mt-1">
-            음원 정보 & 스트리밍
-        </div>
-        <a href="./music/music.html"><img class="border-2 border-solid border-blue-500 rounded-lg mt-2 w-64 h-40" src="./picture/yeji3.jpg" alt="음악사이트 바로가기"></a>
-    </div>
-
-    <!-- 고독예지방 -->
-    <div class="grid place-content-center bg-gradient-to-r from-cyan-500 to-blue-500 p-4">
-        <div class="text-white text-2xl text-center">
-            <i class="text-yellow-400 fa-regular fa-comment"></i> 고독한 예지방
-        </div>
-        <div class="text-white text-xl text-center mt-1">
-            카카오톡 오픈채팅
-        </div>
-        <a href="https://open.kakao.com/o/gDNUELbb"><img class="border-2 border-solid border-blue-500 rounded-lg mt-2 w-64 h-40" src="./picture/yeji4.jpg" alt="고독한 예지방 바로가기"></a>
-    </div>
-
-    <!-- 눈덩이 -->
-    <div class="grid place-content-center bg-sky-200 to-blue-500 p-4">
-        <div class="text-black text-2xl text-center">
-            <i class="text-yellow-400 fa-regular fa-comment"></i> 눈덩이 테마
-        </div>
-        <div class="text-black text-xl text-center mt-1">
-            Made by 한국예지동아리
-        </div>
-        <a href="https://koreayejiloversclub.tistory.com/m/17"><img class="border-2 border-solid border-blue-500 rounded-lg mt-2 w-64 h-40" src="./picture/yeji6.jpg" alt="고독한 예지방 바로가기"></a>
-    </div>
-
-    <!-- 배경화면 -->
-    <div class="grid place-content-center bg-gradient-to-r from-indigo-500 to-blue-950 p-4">
-        <div class="text-white text-2xl text-center">
-            <i class="text-violet-700 fa-regular fa-file-image"></i> 배경화면
-        </div>
-        <div class="text-white text-xl text-center mt-1">
-            핸드폰 배경화면
-        </div>
-        <a href="https://drive.google.com/drive/folders/1SDZYsASrvhAc0R3ZjpyEgPjP-E13OVYr"><img class="border-2 border-solid border-blue-500 rounded-lg mt-2 w-64 h-40 mb-5" src="./picture/yeji5.jpg" alt="배경화면 바로가기"></a>
-
-
-        <hr>
-        <div class="text-white text-sm mt-2 text-center font-semibold">
-            Contact : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
-            <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 )<br />LOGO
-            : 한국예지동아리 (
-            <i class="text-sky-400 fa-brands fa-twitter"></i> yejisupporters )
-          </div>
-    </div>
-
+        choiceImages.forEach(function(choice) {
+            choice.addEventListener('click', function() {
+                const mainProfileImg = document.getElementById("mainProfileImg");
+                const mainSrc = mainProfileImg.src;
+                const mainAlt = mainProfileImg.alt;
+    
+                mainProfileImg.src = choice.src;
+                mainProfileImg.alt = choice.alt;
+                choice.src = mainSrc;
+                choice.alt = mainAlt;
+    
+                const choicesContainer = document.getElementById("choicesContainer");
+                choicesContainer.classList.add('hidden');
+    
+                showText(mainProfileImg.alt);
+            });
+        });
+    
+        function hideProfileGreetings() {
+            const textElements = document.querySelectorAll("#textbox p");
+            textElements.forEach(function(text) {
+                text.style.display = 'none';
+            });
+        }
+    
+        function showText(selectedAlt) {
+            hideProfileGreetings();
+            document.getElementById("hi").style.display = 'block';
+            document.getElementById(selectedAlt).style.display = 'block';
+    
+            // Show matching "띵언" text
+            const dingEonElements = document.querySelectorAll(".italic");
+            dingEonElements.forEach(function(text) {
+                if (text.id === selectedAlt) {
+                    text.style.display = 'block';
+                } else {
+                    text.style.display = 'none';
+                }
+            });
+        }
+    
+        // Initially show only the "hi" and "YEJI" texts and "YEJI" 띵언
+        hideProfileGreetings();
+        document.getElementById("hi").style.display = 'block';
+        document.getElementById("YEJI").style.display = 'block';
+    
+        const dingEonElements = document.querySelectorAll(".italic");
+        dingEonElements.forEach(function(text) {
+            text.style.display = (text.id === "YEJI") ? 'block' : 'none';
+        });
+    </script>
+    
+    
 </body>
 </html>
