@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITZY Photo</title>
+    <meta property="og:image" content="./profile/homepage.jpg">
+    <link rel="icon" href="./profile/itzy_icon.png"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        .profile-list {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ----------------------------------------------- NAVIGATION ------------------------------------------------- -->
+
+    <!-- 내비게이션 바 (아이콘, 목차) -->
+    <div id="header" class="p-3 flex justify-between border border-b-gray-400 flex-col xl:flex-row items-center">
+
+        <!-- 좌측 로고 -->
+        <a href="../index.html"><img src="../profile/itzy_icon.png" alt="ITZY" class="xl:w-16 xl:h-16 xl:ml-10 w-10 h-10"></a>
+
+        <!-- 우측 내비게이션 -->
+        <ul id="menu" class="text-center flex items-center text-lg xl:text-xl mr-10 flex-col xl:flex-row hidden xl:flex">
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="./gallery.html">사진</a></li>
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="../music/music.html">음반</a></li>
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="../music/music.html">스트리밍</a></li>
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="#">카카오톡</a></li>
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="#">공지</a></li>
+        </ul>
+    </div>
+
+    <!-- 햄버거 바 -->
+    <a href="#" class="toggleBtn">
+        <i class="fa-solid fa-bars absolute fixed right-8 top-4 xl:top-7 text-lg xl:text-2xl block xl:hidden"></i>
+    </a>
+
+    <!-- -------------------------------------------- 프로필 선택 --------------------------------------------------- -->
+
+    <div class="container w-screen h-auto mx-auto p-4">
+        <div class="w-full p-4 rounded-lg border-solid border-2 border-gray-300">
+          <p class="text-black text-2xl font-bold text-center xl:text-5xl">GALLERY</p>
+          <p class="text-gray-300 italic text-center xl:text-3xl xl:mt-3">ITZY Instagram</p>
+
+            <div class="flex justify-between mt-5 xl:mt-12">
+                <div class="flex flex-col">
+                    <button onclick="showList('yeji-list')"><img src="../profile/profile1.jpg" alt="1" class="rounded-full w-28 xl:w-32 p-1"></button>
+                    <p class="text-sm text-gray-500 text-center">예지</p>
+                </div>
+                <div class="flex flex-col">
+                    <button onclick="showList('lia-list')"><img src="../profile/profile2.jpg" alt="2" class="rounded-full w-28 xl:w-32 p-1"></button>
+                    <p class="text-sm text-gray-500 text-center">리아</p>
+                </div>
+                <div class="flex flex-col">
+                    <button onclick="showList('ryujin-list')"><img src="../profile/profile3.jpg" alt="3" class="rounded-full w-28 xl:w-32 p-1"></button>
+                    <p class="text-sm text-gray-500 text-center">류진</p>
+                </div>
+                <div class="flex flex-col">
+                    <button onclick="showList('chaeryeong-list')"><img src="../profile/profile4.jpg" alt="4" class="rounded-full w-28 xl:w-32 p-1"></button>
+                    <p class="text-sm text-gray-500 text-center">채령</p>
+                </div>
+                <div class="flex flex-col">
+                    <button onclick="showList('yuna-list')"><img src="../profile/profile5.jpg" alt="5" class="rounded-full w-28 xl:w-32 p-1"></button>
+                    <p class="text-sm text-gray-500 text-center">유나</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------- 목록 선택(예지) --------------------------------------------------- -->
+
+    <div id="yeji-list" class="container max-w-full mx-auto p-4 profile-list">
+        <div class="w-full p-4 rounded-lg border-solid border-2 border-black bg-slate-500">
+            <div class="flex justify-center">
+                <a href="https://www.instagram.com/yezyizhere/"><img src="../profile/yezy.PNG" alt="YEZYizHERE" class="w-40"></a>
+            </div>
+            <div class="container max-w-full mx-auto p-4 grid grid-cols-1 xl:grid-cols-2 xl:gap-4">
+                
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1vkPvqBGDp--aSVjmCJlU0b8GJs05C23R">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300">
+                        <div class="p-1 flex justify-between">
+                            <p>달라달라</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+                
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1J1KPl4hj0SJST3bNF0OVsU88ipUXCzFR">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>ICY</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1IJb25foPVYJUHOAiiogQqOVD6eds-yVA">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>WANNABE</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1eA9H-UuEmIqrolCQqHhTdzVRDjyHd65f">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>NOT SHY</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1f8qkFA11P76ur1DgCPUSoeUjl4MrZ7FK">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>GUESS WHO</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1TWoUVdFQtI2CN0QVzRNbVO_yAed3LK8N">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>CRAZY IN LOVE</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1HIe8ZVIBnrdo6di_24uGB6ejtt_9vpPJ">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>CHECKMATE</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1fOlF9pIVsOQ5DmwJKwlFzbrAtbig8Ry9">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>CHESHIRE</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1LHaJkhbXdjJH4T4qn1BuxsacEWe2WcCn">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>KILL MY DOUBT</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+                <button>
+                    <a href="https://drive.google.com/drive/u/1/folders/1QSWTVdM5eF6VuIoXfDO4yYz0VgLJXpK8">
+                    <div class="w-full p-2 rounded-lg border-solid border-2 border-gray-300 mt-3 xl:mt-0">
+                        <div class="p-1 flex justify-between">
+                            <p>BORN TO BE</p>
+                            <i class="fa-solid fa-chevron-right mt-1"></i>
+                        </div>
+                    </div>
+                    </a>
+                </button>
+
+            </div>
+        </div>
+    </div>
+ 
+    <!-- ------------------------------------------------- 목록 선택(리아) --------------------------------------------------- -->
+
+    <div id="lia-list" class="container max-w-full mx-auto p-4 profile-list">
+        <div class="w-full p-4 rounded-lg border-solid border-2 border-gray-300">
+            <p class="text-black text-2xl font-bold text-center xl:text-3xl">LIA</p>
+            <div class="container max-w-full mx-auto p-4 grid grid-cols-1 items-center">
+                <h1 class="text-2xl text-center">사진이 없어요 :( </h1>
+                <p class="text-center">사진 접수</p>
+                <p class="text-center mb-3">itmidnal0212@gmail.com</p>
+                <div class="flex justify-center">
+                    <img src="../example/no_2.png" alt="" class="w-4/5 xl:w-1/5 ">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- ------------------------------------------------- 목록 선택(류진) --------------------------------------------------- -->
+
+    <div id="ryujin-list" class="container max-w-full mx-auto p-4 profile-list">
+        <div class="w-full p-4 rounded-lg border-solid border-2 border-gray-300">
+            <p class="text-black text-2xl font-bold text-center xl:text-3xl">RYUJIN</p>
+            <div class="container max-w-full mx-auto p-4 grid grid-cols-1 items-center">       
+                
+                <h1 class="text-2xl text-center">사진이 없어요 :( </h1>
+                <p class="text-center">사진 접수</p>
+                <p class="text-center mb-3">itmidnal0212@gmail.com</p>
+                
+                <div class="flex justify-center">
+                    <img src="../example/no_3.jpg" alt="" class="w-4/5 xl:w-1/5 ">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------- 목록 선택(채령) --------------------------------------------------- -->
+
+    <div id="chaeryeong-list" class="container max-w-full mx-auto p-4 profile-list">
+        <div class="w-full p-4 rounded-lg border-solid border-2 border-gray-300">
+            <p class="text-black text-2xl font-bold text-center xl:text-3xl">CHAERYEONG</p>
+            <div class="container max-w-full mx-auto p-4 grid grid-cols-1 items-center">
+                
+                <h1 class="text-2xl text-center">사진이 없어요 :( </h1>
+                <p class="text-center">사진 접수</p>
+                <p class="text-center mb-3">itmidnal0212@gmail.com</p>
+                
+                <div class="flex justify-center">
+                    <img src="../example/no_4.png" alt="" class="w-4/5 xl:w-1/5 ">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------- 목록 선택(유나) --------------------------------------------------- -->
+
+    <div id="yuna-list" class="container max-w-full mx-auto p-4 profile-list">
+        <div class="w-full p-4 rounded-lg border-solid border-2 border-gray-300">
+            <p class="text-black text-2xl font-bold text-center xl:text-3xl">YUNA</p>
+            <div class="container max-w-full mx-auto p-4 grid grid-cols-1 items-center">             
+                
+                <h1 class="text-2xl text-center">사진이 없어요 :( </h1>
+                <p class="text-center">사진 접수</p>
+                <p class="text-center mb-3">itmidnal0212@gmail.com</p>
+                
+                <div class="flex justify-center">
+                    <img src="../example/no_5.jpg" alt="" class="w-4/5 xl:w-1/5 ">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------- FOOTER --------------------------------------------------- -->
+
+    <div class="p-3 mt-5 flex border border-t-gray-400 border-b-white flex-col items-center">
+        <img src="../profile/midzy.png" alt="MIDZY" class="w-44">
+        <div class="text-black text-sm text-center font-semibold">
+            Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
+            <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button class="rounded-lg border-solid border-2 border-gray-300 bg-gray-300"><a href="https://open.kakao.com/me/dang0526">문의하기</a></button>
+            <br />LOGO : 한국예지동아리 ( <i class="text-sky-400 fa-brands fa-twitter"></i> yejisupporters )
+            <br>Copyright ⓒ 2024 MIDZY All rights reserved.
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------- JS CODE -------------------------------------------------- -->
+    
+    <script>
+        function showList(id) {
+            const lists = document.querySelectorAll('.profile-list');
+            lists.forEach(list => {
+                if (list.id === id) {
+                    list.style.display = 'block';
+                } else {
+                    list.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
