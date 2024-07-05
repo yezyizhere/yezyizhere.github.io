@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITZY Photo</title>
     <meta property="og:image" content="../profile/homepage.jpg">
-    <link rel="icon" href="./profile/itzy_icon.png"/>
+    <link rel="icon" href="../profile/itzy_icon.png"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
@@ -27,8 +27,8 @@
         <!-- 우측 내비게이션 -->
         <ul id="menu" class="text-center flex items-center text-lg xl:text-xl mr-10 flex-col xl:flex-row hidden xl:flex">
             <li class="ml-7 p-2 hover:text-blue-800"><a href="./gallery.html">사진</a></li>
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="../music/music.html">음반</a></li>
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="../music/music.html">스트리밍</a></li>
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="../Music/music.html">음반</a></li>
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="../Music/streaming.html">스트리밍</a></li>
             <li class="ml-7 p-2 hover:text-blue-800"><a href="#">카카오톡</a></li>
             <li class="ml-7 p-2 hover:text-blue-800"><a href="#">공지</a></li>
         </ul>
@@ -283,6 +283,8 @@
     <!-- -------------------------------------------------- JS CODE -------------------------------------------------- -->
     
     <script>
+        
+        // 캐릭터별 사진 펼치기 기능
         function showList(id) {
             const lists = document.querySelectorAll('.profile-list');
             lists.forEach(list => {
@@ -293,6 +295,23 @@
                 }
             });
         }
+
+        // 상단바 메뉴 기능
+        const toggleBtn = document.querySelector('.toggleBtn');
+        const menu = document.querySelector("#menu");
+        const icon = toggleBtn.querySelector('i');
+
+        toggleBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-x');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-x');
+            }
+        });
+
     </script>
 </body>
 </html>
