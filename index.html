@@ -8,6 +8,21 @@
     <link rel="icon" href="./profile/itzy_icon.png"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        :root, :host {
+            --fa-style-family-brands: 'Font Awesome 6 Brands';
+            --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands'; }
+
+            @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-style: normal;
+            font-weight: 400;
+            font-display: block;
+            src: url("./fonts/fa-brands-400.woff2") format("woff2"), url("./fonts/fa-brands-400.ttf") format("truetype"); }
+            
+            .fa-x-twitter:before {
+                content: "\e61b"; }
+    </style>
 </head>
 <body>
 
@@ -17,12 +32,12 @@
     <div id="header" class="p-3 flex justify-between border border-b-gray-400 flex-col xl:flex-row items-center">
 
         <!-- 좌측 로고 -->
-        <img src="./profile/itzy_icon.png" alt="ITZY" class="xl:w-16 xl:h-16 xl:ml-10 w-10 h-10">
+        <img src="./profile/Itzy_icon.png" alt="ITZY" class="xl:w-16 xl:h-16 xl:ml-10 w-10 h-10">
 
         <!-- 우측 내비게이션 -->
         <ul id="menu" class="text-center flex items-center text-lg xl:text-xl mr-10 flex-col xl:flex-row hidden xl:flex">
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="./instagram/instagram.html">사진</a></li>
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="./music/music.html">음반</a></li>
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="#">사진</a></li>
+            <li class="ml-7 p-2 hover:text-blue-800"><a href="#">음반</a></li>
             <li class="ml-7 p-2 hover:text-blue-800"><a href="#">스트리밍</a></li>
             <li class="ml-7 p-2 hover:text-blue-800"><a href="#">카카오톡</a></li>
             <li class="ml-7 p-2 hover:text-blue-800"><a href="#">공지</a></li>
@@ -54,7 +69,7 @@
                 <button><a href="https://itzy.jype.com/"><img src="./profile/itzy_icon.png" alt="ITZY" class="w-8 xl:w-16"></a></button>
                 <button><a href="https://www.instagram.com/itzy.all.in.us"><i class="fa-brands fa-instagram text-4xl xl:text-7xl text-rose-600"></i></a></button>
                 <button><a href="https://www.youtube.com/c/ITZY"><i class="fa-brands fa-youtube text-4xl xl:text-7xl text-red-600"></i></a></button>
-                <button><a href="https://x.com/ITZYOfficial"><i class="fa-brands fa-twitter text-4xl xl:text-7xl text-cyan-400"></i></a></button>
+                <button><a href="https://x.com/ITZYOfficial"><i class="fa-brands fa-x-twitter text-4xl xl:text-7xl text-black"></i></a></button>
                 <button><a href="https://www.facebook.com/OfficialItzy"><i class="fa-brands fa-facebook text-4xl xl:text-7xl text-blue-500"></i></a></button>
             </div>
             <div class="flex justify-between mt-5 xl:m-6">
@@ -67,12 +82,13 @@
         </div>
     </div>
     
-    <!-- ------------------------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------ <이스터에그> 캡쳐해서 보내주면 선물 드려요 --------------------- -->
 
 
     <!-- -------------------------------------------------- FOOTER --------------------------------------------------- -->
 
-    <div class="p-3 mt-10 flex border border-t-gray-400 flex-col items-center">
+    <div class="p-3 mt-5 flex border border-t-gray-400 flex-col items-center">
+        <img src="./profile/midzy.png" alt="MIDZY" class="w-44">
         <div class="text-black text-sm text-center font-semibold">
             Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
             <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button class="rounded-lg border-solid border-2 border-gray-300 bg-gray-300"><a href="https://open.kakao.com/me/dang0526">문의하기</a></button>
