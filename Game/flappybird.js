@@ -5,7 +5,7 @@ let boardHeight = 640;
 let context;
 
 //bird
-let birdWidth = 42; //width/height ratio = 408/228 = 17/12
+let birdWidth = 39; //width/height ratio = 408/228 = 17/12
 let birdHeight = 34;
 let birdX = boardWidth / 8;
 let birdY = boardHeight / 2;
@@ -48,7 +48,7 @@ window.onload = function () {
 
     //load images
     birdImg = new Image();
-    birdImg.src = "./flappybird.png";
+    birdImg.src = "./flappybird_l.png";
     birdImg.onload = function () {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     }
