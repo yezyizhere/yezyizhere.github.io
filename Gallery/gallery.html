@@ -14,6 +14,24 @@
         .profile-list {
             display: none;
         }
+
+        :root,
+        :host {
+            --fa-style-family-brands: 'Font Awesome 6 Brands';
+            --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands';
+        }
+
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-style: normal;
+            font-weight: 400;
+            font-display: block;
+            src: url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.ttf") format("truetype");
+        }
+
+        .fa-x-twitter:before {
+            content: "\e61b";
+        }
     </style>
 </head>
 
@@ -758,12 +776,12 @@
         <img src="../profile/midzy.png" alt="MIDZY" class="w-44">
         <div class="text-black text-sm text-center font-semibold">
             Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
-            <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button
+            <i class="text-black fa-brands fa-x-twitter"></i> dang0526 ) <button
                 class="rounded-lg border-solid border-2 border-gray-300 bg-gray-300"><a
                     href="https://open.kakao.com/me/dang0526">문의하기</a></button>
             <br>제작 지원 : <i class="text-yellow-400 fa-regular fa-comment"></i> 오태식 / <i
                 class="text-yellow-400 fa-regular fa-comment"></i> 있지여신 / <i
-                class="text-yellow-400 fa-regular fa-comment"></i> 빈
+                class="text-black fa-brands fa-x-twitter"></i> 빈
             <br>Copyright ⓒ 2024 MIDZY All rights reserved.
         </div>
     </div>
