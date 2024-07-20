@@ -1,120 +1,139 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITZY Like That</title>
-    <meta property="og:image" content="./profile/photo.jpg">
-    <link rel="icon" href="./profile/itzy_icon.png"/>
+    <meta property="og:image" content="./profile/homepage.jpg">
+    <link rel="icon" href="./profile/itzy_icon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <style>
-        :root, :host {
-            --fa-style-family-brands: 'Font Awesome 6 Brands';
-            --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands'; }
 
-            @font-face {
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        :root,
+        :host {
+            --fa-style-family-brands: 'Font Awesome 6 Brands';
+            --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands';
+        }
+
+        @font-face {
             font-family: 'Font Awesome 6 Brands';
             font-style: normal;
             font-weight: 400;
             font-display: block;
-            src: url("./fonts/fa-brands-400.woff2") format("woff2"), url("./fonts/fa-brands-400.ttf") format("truetype"); }
-            
-            .fa-x-twitter:before {
-                content: "\e61b"; }
+            src: url("./fonts/fa-brands-400.woff2") format("woff2"), url("./fonts/fa-brands-400.ttf") format("truetype");
+        }
+
+        .fa-x-twitter:before {
+            content: "\e61b";
+        }
+
+        .text {
+            font-family: "Playwrite BE VLG", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
+
 <body>
 
     <!-- ----------------------------------------------- NAVIGATION ------------------------------------------------- -->
 
     <!-- 내비게이션 바 (아이콘, 목차) -->
-    <div id="header" class="p-3 flex justify-between border border-b-gray-400 flex-col xl:flex-row items-center">
+    <div id="header" class="flex flex-col items-center justify-between p-3 border border-b-gray-400 xl:flex-row">
 
         <!-- 좌측 로고 -->
-        <a href="./index.html"><img src="./profile/itzy_icon.png" alt="ITZY" class="xl:w-16 xl:h-16 xl:ml-10 w-10 h-10"></a>
+        <a href="./index.html"><img src="./profile/itzy_icon.png" alt="ITZY"
+                class="w-10 h-10 xl:w-16 xl:h-16 xl:ml-10"></a>
 
         <!-- 우측 내비게이션 -->
-        <ul id="menu" class="text-center flex items-center text-lg xl:text-xl mr-10 flex-col xl:flex-row hidden xl:flex">
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="./Gallery/gallery.html">사진</a></li>
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="./Music/music.html">음반</a></li>
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="./Music/streaming.html">스트리밍</a></li>
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="./Contents/contents.html">콘텐츠</a></li>
-            <li class="ml-7 p-2 hover:text-blue-800"><a href="./Game/game.html">게임</a></li>
+        <ul id="menu"
+            class="flex flex-col items-center hidden mr-10 text-lg text-center xl:text-xl xl:flex-row xl:flex">
+            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Gallery/gallery.html">사진</a></li>
+            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Music/music.html">음반</a></li>
+            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Music/streaming.html">스트리밍</a></li>
+            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Contents/contents.html">콘텐츠</a></li>
+            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Game/game.html">게임</a></li>
         </ul>
     </div>
 
     <!-- 햄버거 바 -->
     <a href="#" class="toggleBtn">
-        <i class="fa-solid fa-bars absolute fixed right-8 top-4 xl:top-7 text-lg xl:text-2xl block xl:hidden"></i>
+        <i class="fixed absolute block text-lg fa-solid fa-bars right-8 top-4 xl:top-7 xl:text-2xl xl:hidden"></i>
     </a>
 
     <!-- -------------------------------------------- YOUTUBE PLAYER ------------------------------------------------ -->
 
     <!-- 동영상 플레이어 -->
-    <div class="container w-screen h-auto m-auto p-4">
-        <div class="video relative pb-[56.25%]">
-          <iframe src="https://www.youtube-nocookie.com/embed/5e3rKInegeU?si=uD_flnT6W15IoRg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="absolute top-0 left-0 right-0 bottom-0 w-full h-full rounded-lg"></iframe>
-        </div>
-    </div>
+    <div class="container w-screen h-auto p-4 m-auto text-center bg-gradient-to-b from-sky-200">
+        <div class="video relative">
+            <button>
+                <a href="http://bit.ly/45VXilz">
+                    <i>
+                        <p class="pt-4 text-lg text-center">#리아의_목소리로_온세상을_물들여</p>
+                    </i>
 
-    <!-- -------------------------------------------- 일회성 컨텐츠 상 ------------------------------------------------ -->
-    <div class="grid grid-cols-2 w-screen h-auto mx-auto p-4 gap-2 container pt-0 pb-0">
-        <div class="">
-            <div class="w-full p-1 rounded-lg border-solid border-2 border-gray-300 bg-sky-200">
-                <button><a href="http://bit.ly/45VXilz">
+                    <p class="text mt-3 mb-7 text-xl text-center">Blooming LIA Day</p>
+
                     <img src="./Event/생일 리아.jpg" class="rounded-lg">
-                    <p class="text-center text-sm mt-2">리아 생일카페 지도</p>
-                </a></button>
-            </div>
-        </div>
-
-        <div class="">
-            <div class="w-full p-1 rounded-lg border-solid border-2 border-gray-300 bg-yellow-600">
-                <button><a href="https://abk.kcforum.co.kr/2024/research/">
-                    <img src="./Event/brand.JPG" class="rounded-lg">
-                    <p class="text-center text-sm mt-2">2024 브랜드상 투표</p>
-                </a></button>
-            </div>
+                    <p class="mt-5 text-xl text-center">생일 카페 지도 바로가기</p>
+                </a>
+            </button>
         </div>
     </div>
-
-    <!-- -------------------------------------------- 일회성 컨텐츠 하 ------------------------------------------------ -->
 
     <!-- --------------------------------------------- OFFICIAL SITE ------------------------------------------------- -->
 
-    <div class="container w-screen h-auto mx-auto p-4">
-        <div class="w-full p-4 rounded-lg border-solid border-2 border-gray-300">
-          <p class="text-black text-2xl font-bold text-center xl:text-5xl">ITZY OFFICIAL</p>
-          <p class="text-gray-300 italic text-center xl:text-3xl xl:mt-3">ITZY 공식 SNS</p>
+    <div class="container w-screen h-auto p-4 mx-auto">
+        <div class="w-full p-4 border-2 border-gray-300 border-solid rounded-lg">
+            <p class="text-2xl font-bold text-center text-black xl:text-5xl">ITZY OFFICIAL</p>
+            <p class="italic text-center text-gray-300 xl:text-3xl xl:mt-3">ITZY 공식 SNS</p>
 
             <div class="flex justify-between mt-3 xl:m-12">
-                <button><a href="https://itzy.jype.com/"><img src="./profile/itzy_icon.png" alt="ITZY" class="w-8 xl:w-16"></a></button>
-                <button><a href="https://www.instagram.com/itzy.all.in.us"><i class="fa-brands fa-instagram text-4xl xl:text-7xl text-rose-600"></i></a></button>
-                <button><a href="https://www.youtube.com/c/ITZY"><i class="fa-brands fa-youtube text-4xl xl:text-7xl text-red-600"></i></a></button>
-                <button><a href="https://x.com/ITZYOfficial"><i class="fa-brands fa-x-twitter text-4xl xl:text-7xl text-black"></i></a></button>
-                <button><a href="https://www.facebook.com/OfficialItzy"><i class="fa-brands fa-facebook text-4xl xl:text-7xl text-blue-500"></i></a></button>
+                <button><a href="https://itzy.jype.com/"><img src="./profile/itzy_icon.png" alt="ITZY"
+                            class="w-8 xl:w-16"></a></button>
+                <button><a href="https://www.instagram.com/itzy.all.in.us"><i
+                            class="text-4xl fa-brands fa-instagram xl:text-7xl text-rose-600"></i></a></button>
+                <button><a href="https://www.youtube.com/c/ITZY"><i
+                            class="text-4xl text-red-600 fa-brands fa-youtube xl:text-7xl"></i></a></button>
+                <button><a href="https://x.com/ITZYOfficial"><i
+                            class="text-4xl text-black fa-brands fa-x-twitter xl:text-7xl"></i></a></button>
+                <button><a href="https://www.facebook.com/OfficialItzy"><i
+                            class="text-4xl text-blue-500 fa-brands fa-facebook xl:text-7xl"></i></a></button>
             </div>
             <div class="flex justify-between mt-5 xl:m-6">
-                <button><a href="https://www.instagram.com/yezyizhere/"><img src="./profile/profile1.jpg" alt="ITZY" class="w-10 xl:w-32 rounded-full"></a></button>
-                <button><a href="https://www.instagram.com/lia_loves___/"><img src="./profile/profile2.jpg" alt="ITZY" class="w-10 xl:w-32 rounded-full"></a></button>
-                <button><a href="https://www.instagram.com/iamfinethankyouandryu/"><img src="./profile/profile3.jpg" alt="ITZY" class="w-10 xl:w-32 rounded-full"></a></button>
-                <button><a href="https://www.instagram.com/chaerrry0/"><img src="./profile/profile4.jpg" alt="ITZY" class="w-10 xl:w-32 rounded-full"></a></button>
-                <button><a href="https://www.instagram.com/igotyuandme/"><img src="./profile/profile5.jpg" alt="ITZY" class="w-10 xl:w-32 rounded-full"></a></button>
+                <button><a href="https://www.instagram.com/yezyizhere/"><img src="./profile/profile1.jpg" alt="ITZY"
+                            class="w-10 rounded-full xl:w-32"></a></button>
+                <button><a href="https://www.instagram.com/lia_loves___/"><img src="./profile/profile2.jpg" alt="ITZY"
+                            class="w-10 rounded-full xl:w-32"></a></button>
+                <button><a href="https://www.instagram.com/iamfinethankyouandryu/"><img src="./profile/profile3.jpg"
+                            alt="ITZY" class="w-10 rounded-full xl:w-32"></a></button>
+                <button><a href="https://www.instagram.com/chaerrry0/"><img src="./profile/profile4.jpg" alt="ITZY"
+                            class="w-10 rounded-full xl:w-32"></a></button>
+                <button><a href="https://www.instagram.com/igotyuandme/"><img src="./profile/profile5.jpg" alt="ITZY"
+                            class="w-10 rounded-full xl:w-32"></a></button>
             </div>
         </div>
     </div>
-    
+
     <!-- ------------------------------------ <이스터에그> 캡쳐해서 보내주면 선물 드려요 --------------------- -->
 
 
     <!-- -------------------------------------------------- FOOTER --------------------------------------------------- -->
 
-    <div class="p-3 mt-5 flex border border-t-gray-400 border-b-white flex-col items-center">
+    <div class="flex flex-col items-center p-3 mt-5 border border-t-gray-400 border-b-white">
         <img src="./profile/midzy.png" alt="MIDZY" class="w-44">
-        <div class="text-black text-sm text-center font-semibold">
+        <div class="text-sm font-semibold text-center text-black">
             Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
-            <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button class="rounded-lg border-solid border-2 border-gray-300 bg-gray-300"><a href="https://open.kakao.com/me/dang0526">문의하기</a></button>
+            <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button
+                class="bg-gray-300 border-2 border-gray-300 border-solid rounded-lg"><a
+                    href="https://open.kakao.com/me/dang0526">문의하기</a></button>
             <br>Copyright ⓒ 2024 MIDZY All rights reserved.
         </div>
     </div>
@@ -139,4 +158,5 @@
 
     </script>
 </body>
+
 </html>
