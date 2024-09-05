@@ -1,62 +1,77 @@
-<!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITZY Like That</title>
-    <meta property="og:image" content="./profile/photo.jpg">
-    <link rel="icon" href="./profile/itzy_icon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <style>
-        :root,
-        :host {
-            --fa-style-family-brands: 'Font Awesome 6 Brands';
-            --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands';
-        }
+    
+    <title>ITZY Like That</title>
+    <meta property="og:image" content="Image/Profile/photo.jpg">
+    <link rel="icon" href="Image/Icon/itzy_icon.png" />
+    <link rel="stylesheet" href="/css/index.css">
 
-        @font-face {
-            font-family: 'Font Awesome 6 Brands';
-            font-style: normal;
-            font-weight: 400;
-            font-display: block;
-            src: url("./fonts/fa-brands-400.woff2") format("woff2"), url("./fonts/fa-brands-400.ttf") format("truetype");
-        }
-
-        .fa-x-twitter:before {
-            content: "\e61b";
-        }
-    </style>
 </head>
-
 <body>
 
-    <!-- ----------------------------------------------- NAVIGATION ------------------------------------------------- -->
+<!-- ----------------------------------------------- header 파트 ------------------------------------------------- -->
+    
+<!-- 헤더 접기 -->
+    <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
 
-    <!-- 내비게이션 바 (아이콘, 목차) -->
-    <div id="header" class="flex flex-col items-center justify-between p-3 border border-b-gray-400 xl:flex-row">
+            <!-- 메뉴 열고 닫기 -->
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <button id="hamburger-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute -inset-0.5"></span>
+                
+                <!-- 햄버거 아이콘 -->
+                <div class="hamburger" id="hamburger-1">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+              </button>
+              
+            </div>
 
-        <!-- 좌측 로고 -->
-        <a href="./index.html"><img src="./profile/itzy_icon.png" alt="ITZY"
-                class="w-10 h-10 xl:w-16 xl:h-16 xl:ml-10"></a>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              
+              <!-- 아이콘 -->
+              <div class="flex flex-shrink-0 items-center">
+                <img class="h-8 w-9" src="/Image/Icon/itzy_icon_white.png" alt="ITZY">
+              </div>
 
-        <!-- 우측 내비게이션 -->
-        <ul id="menu"
-            class="flex flex-col items-center hidden mr-10 text-lg text-center xl:text-xl xl:flex-row xl:flex">
-            <li class="p-2 ml-7 hover:text-blue-800"><a href="./download.html">다운로드</a></li>
-            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Gallery/gallery.html">사진</a></li>
-            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Music/music.html">음반</a></li>
-            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Music/streaming.html">스트리밍</a></li>
-            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Contents/contents.html">콘텐츠</a></li>
-            <li class="p-2 ml-7 hover:text-blue-800"><a href="./Game/game.html">게임</a></li>
-        </ul>
-    </div>
+              <!-- pc 메뉴 -->
+              <div class="hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <a href="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">홈</a>
+                  <a href="/html/picture.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">사진</a>
+                  <a href="/html/music.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">음반</a>
+                  <a href="/html/site.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">공식 사이트</a>
+                  <a href="/html/streaming.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">스트리밍</a>
+                  <a href="/html/game.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">게임</a>
+                </div>
+              </div>
 
-    <!-- 햄버거 바 -->
-    <a href="#" class="toggleBtn">
-        <i class="fixed absolute block text-lg fa-solid fa-bars right-8 top-4 xl:top-7 xl:text-2xl xl:hidden"></i>
-    </a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- 모바일 메뉴 -->
+        <div class="sm:hidden hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">홈</a>
+            <a href="/html/picture.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">사진</a>
+            <a href="./Music/music.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">음반</a>
+            <a href="./Music/streaming.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">스트리밍</a>
+            <a href="./Game/game.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">게임</a>
+          </div>
+        </div>
+      </nav>
+
+<body>
 
     <!-- -------------------------------------------- YOUTUBE PLAYER ------------------------------------------------ -->
 
@@ -110,7 +125,7 @@
     <!-- -------------------------------------------------- FOOTER --------------------------------------------------- -->
 
     <div class="flex flex-col items-center p-3 mt-5 border border-t-gray-400 border-b-white">
-        <img src="./profile/midzy.png" alt="MIDZY" class="w-44">
+        <img src="/Image/Icon/midzy.png" alt="MIDZY" class="w-36">
         <div class="text-sm font-semibold text-center text-black">
             Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
             <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button
@@ -123,19 +138,15 @@
     <!-- -------------------------------------------------- JS CODE -------------------------------------------------- -->
 
     <script>
-        const toggleBtn = document.querySelector('.toggleBtn');
-        const menu = document.querySelector("#menu");
-        const icon = toggleBtn.querySelector('i');
-
-        toggleBtn.addEventListener('click', () => {
+        // 메뉴 기능
+        document.querySelector('#hamburger-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const hamburger = document.getElementById('hamburger-1');
+            const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+            
+            this.setAttribute('aria-expanded', !expanded);
             menu.classList.toggle('hidden');
-            if (menu.classList.contains('hidden')) {
-                icon.classList.remove('fa-x');
-                icon.classList.add('fa-bars');
-            } else {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-x');
-            }
+            hamburger.classList.toggle('is-active');
         });
 
     </script>
