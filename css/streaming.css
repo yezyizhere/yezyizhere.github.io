@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    padding: 12px;
+    top: 15%;
+    position: absolute;
+    text-align: center;
+}
+
+.accordion-collapse {
+    font-weight: bold;
+    text-align: center;
+}
+
+.stream-site {
+    text-align: center;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+a:link {
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    font-weight: lighter;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+#logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
