@@ -20,6 +20,20 @@
           }
         </style> -->
 
+        <style>
+          .completed::marker {
+              content: '✔';  /* 체크 표시 */
+              color: red;  /* 체크 표시 색상 */
+              font-weight: bold;
+          }
+
+          .not-completed::marker {
+              content: '🔳';  /* 기본 점 */
+              color: black;
+          }
+
+        </style>
+
     </head>
 
 <body class="bg-custom-gradient">
@@ -79,7 +93,7 @@
           </div>
         </div>
     </nav>
-    
+
     <!-- 1.1 로고 -->
     <div class="flex justify-center">
       <img src="/Image/Icon/borntobe.png" alt="Born To Be" class="mt-10">
@@ -192,8 +206,10 @@
             // 타임라인 내용을 초기화
             timelineContent.innerHTML = '';
 
+            const now = new Date();
+
             Object.entries(timerData).forEach(([date, { content }]) => {
-                const listItem = document.createElement('ul');
+                const listItem = document.createElement('li');
 
                 // 날짜 포맷 옵션
                 const dateOptions = { month: '2-digit', day: '2-digit' };
@@ -203,13 +219,23 @@
                 const formattedDate = new Date(date).toLocaleDateString(undefined, dateOptions);
                 const formattedTime = new Date(date).toLocaleTimeString(undefined, timeOptions);
 
-                listItem.textContent = `${formattedDate} ${formattedTime} : ${content}`;
+                listItem.textContent = ` ${formattedDate} ${formattedTime} : ${content}`;
+
+                // 수행 완료 여부 체크
+                if (new Date(date) < now) {
+                    listItem.classList.add('completed');  // 완료된 항목에 클래스 추가
+                } else {
+                    listItem.classList.add('not-completed');  // 미완료 항목에 기본 클래스 추가
+                }
+
                 timelineContent.appendChild(listItem);
             });
 
             // 모달 표시
             timelineModal.classList.remove('hidden');
         });
+
+
 
         // 모달 닫기 버튼 클릭 시 모달 닫기
         document.getElementById('close-timeline-btn').addEventListener('click', () => {
