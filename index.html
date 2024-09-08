@@ -1,31 +1,39 @@
-<html lang="en">
-<head>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
     
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    
-    <title>ITZY Like That</title>
-    <meta property="og:image" content="/Image/Profile/photo.jpg">
-    <link rel="icon" href="Image/Icon/itzy_icon.png" />
-    <link rel="stylesheet" href="/css/index.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        
+        <title>ITZY Like That</title>
+        <meta property="og:image" content="/Image/Profile/photo.jpg">
+        <link rel="icon" href="Image/Icon/itzy_icon.png" />
+        <link rel="stylesheet" href="/css/index.css">
 
-</head>
-<body>
+        <!-- <style>
+          @layer utilities {
+            .bg-custom-gradient {
+              background: linear-gradient(220deg, #731b14 3%, #260101 20%, #0d0402 30%);
+            }
+          }
+        </style> -->
 
-<!-- ----------------------------------------------- header 파트 ------------------------------------------------- -->
+    </head>
+
+<body class="bg-custom-gradient">
     
-<!-- 헤더 접기 -->
+    <!-- 0. header 헤더접기 -->
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
-
+      
             <!-- 메뉴 열고 닫기 -->
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <button id="hamburger-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu" aria-expanded="false">
                 <span class="absolute -inset-0.5"></span>
-                
+      
                 <!-- 햄버거 아이콘 -->
                 <div class="hamburger" id="hamburger-1">
                   <span class="line"></span>
@@ -33,28 +41,28 @@
                   <span class="line"></span>
                 </div>
               </button>
-              
+      
             </div>
-
+      
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              
+      
               <!-- 아이콘 -->
               <div class="flex flex-shrink-0 items-center">
                 <img class="h-8 w-9" src="/Image/Icon/itzy_icon_white.png" alt="ITZY">
               </div>
-
+      
               <!-- pc 메뉴 -->
               <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                  <a href="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">홈</a>
-                  <a href="/html/picture.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">사진</a>
-                  <a href="/html/music.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">음반</a>
-                  <a href="/html/site.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">공식 사이트</a>
-                  <a href="/html/streaming.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">스트리밍</a>
-                  <a href="/html/game.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">게임</a>
-                </div>
+                    <div class="flex space-x-4">
+                        <a href="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">홈</a>
+                        <a href="/html/picture.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">사진</a>
+                        <a href="/html/music.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">음반</a>
+                        <a href="/html/site.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">공식 사이트</a>
+                        <a href="/html/streaming.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">스트리밍</a>
+                        <a href="/html/game.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">게임</a>
+                    </div>
               </div>
-
+      
             </div>
           </div>
         </div>
@@ -70,40 +78,183 @@
             <a href="/html/game.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">게임</a>
           </div>
         </div>
-      </nav>
-      
-<!-- ----------------------------------------------- body 파트 ------------------------------------------------- -->
-<h1>홈/링크 메뉴 점검중입니다</h1>
-<h1>메뉴를 선택해 다른 컨텐츠를 이용해주세요</h1>
-<h1>이번주 내에 완성됩니다 감사합리아</h1>
-<!-- ----------------------------------------------- footer 파트 ------------------------------------------------- -->
+    </nav>
 
-<!-- footer접기 -->
-<div class="flex flex-col items-center p-3 mt-5 border border-t-gray-400 border-b-white">
-  <img src="/Image/Icon/midzy.png" alt="MIDZY" class="w-36">
-  <div class="text-sm font-semibold text-center text-black">
-      Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
-      <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button
-          class="bg-gray-300 border-2 border-gray-300 border-solid rounded-lg"><a
-              href="https://open.kakao.com/me/dang0526">문의하기</a></button>
-      <br>Copyright ⓒ 2024 MIDZY All rights reserved.
+    <!-- 1. 유튜브 플레이어 -->
+    <div class="container w-screen h-auto m-auto p-4 flex justify-center">
+      <div class="aspect-[16/9] w-[90%] xl:w-[40%] relative">
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/5e3rKInegeU?si=uD_flnT6W15IoRg4&autoplay=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" 
+            allowfullscreen 
+            class="absolute top-0 left-0 right-0 bottom-0 w-full h-full rounded-lg">
+          </iframe>
+      </div>
   </div>
-</div>
+    
+    <!-- 2. 카운트 다운 -->
+    <div class="container w-screen h-auto m-auto p-4 pt-0 flex justify-center">
+        <div class="w-[90%] xl:w-[40%] relative rounded-lg border-solid border-2 border-gray-300">
+            
+            <!-- 2-1. 상위 자막 -->
+
+            <!-- 있지 로고 -->
+            <p class="text-black text-xl font-bold text-center xl:text-2xl">ITZY</p>
+
+            <!-- 타이틀명 -->
+            <p class="text-black text-2xl font-bold text-center xl:text-4xl">Will Comeback</p>
+
+            <!-- 컨텐츠명 -->
+            <p id="countdown-label" class="text-gray-400 text-center xl:text-2xl xl:mt-3">COUNTDOWN</p>
+    
+            <!-- 2-2. 카운트다운 시계 -->
+            <div class="db_title flex justify-center items-center text-center">
+                <div class="w-105" id="modal">
+                    <span class="text-red-600 text-xl xl:text-2xl font-semibold">
+                        <span>D - </span>
+                        <span class="days" id="days"></span>
+                    </span>
+                    <p class="timer-wrap text-2xl xl:text-4xl tracking-[.25em]">
+                        <span class="h12" id="hours"></span>
+                        <span> : </span>
+                        <span class="m1" id="minutes"></span>
+                        <span> : </span>
+                        <span class="s1" id="seconds"></span>
+                        <span> .</span>
+                        <span class="ms1" id="milliseconds"></span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 3. 목록 -->
+    <!-- 타임라인 보기 버튼 -->
+    <div class="container w-screen h-auto m-auto p-4 flex justify-center">
+      <button id="view-timeline-btn" class="bg-red-500 text-white py-2 px-4 rounded">
+          View Timeline
+      </button>
+    </div>
+
+    <!-- 타임라인 모달 -->
+    <div id="timeline-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-[90%] md:w-[60%] lg:w-[40%] xl:w-[30%] relative">
+            <button id="close-timeline-btn" class="absolute top-5 right-5 text-gray-600 hover:text-gray-900">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="text-2xl font-bold mb-4">시간표</h2>
+            <ul id="timeline-content" class="list-disc space-y-2"></ul>
+        </div>
+    </div>
+
+    <!-- footer접기 -->
+    <div class="flex flex-col items-center p-3 mt-5 border border-t-gray-400 border-b-white">
+        <img src="/Image/Icon/midzy.png" alt="MIDZY" class="w-36">
+        <div class="text-sm font-semibold text-center text-black">
+            Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
+            <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button
+                class="bg-gray-300 border-2 border-gray-300 border-solid rounded-lg"><a
+                    href="https://open.kakao.com/me/dang0526">문의하기</a></button>
+            <br>Copyright ⓒ 2024 MIDZY All rights reserved.
+        </div>
+    </div>
+
+    <!-- JAVA Script -->
+    <script type="module">
+
+        // 메뉴 기능
+        document.querySelector('#hamburger-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const hamburger = document.getElementById('hamburger-1');
+            const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+            
+            this.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('hidden');
+            hamburger.classList.toggle('is-active');
+        });
+
+        // timer.js를 import
+        import timerData from './timer.js';
+
+        // 타임라인 보기 버튼 클릭 시 모달 열기
+        document.getElementById('view-timeline-btn').addEventListener('click', () => {
+            const timelineModal = document.getElementById('timeline-modal');
+            const timelineContent = document.getElementById('timeline-content');
+            
+            // 타임라인 내용을 초기화
+            timelineContent.innerHTML = '';
+
+            Object.entries(timerData).forEach(([date, { content }]) => {
+                const listItem = document.createElement('ul');
+
+                // 날짜 포맷 옵션
+                const dateOptions = { month: '2-digit', day: '2-digit' };
+                const timeOptions = { hour: '2-digit', minute: '2-digit' };
+
+                // 날짜와 시간 문자열 생성
+                const formattedDate = new Date(date).toLocaleDateString(undefined, dateOptions);
+                const formattedTime = new Date(date).toLocaleTimeString(undefined, timeOptions);
+
+                listItem.textContent = `${formattedDate} ${formattedTime} : ${content}`;
+                timelineContent.appendChild(listItem);
+            });
+
+            // 모달 표시
+            timelineModal.classList.remove('hidden');
+        });
+
+        // 모달 닫기 버튼 클릭 시 모달 닫기
+        document.getElementById('close-timeline-btn').addEventListener('click', () => {
+            const timelineModal = document.getElementById('timeline-modal');
+            timelineModal.classList.add('hidden');
+        });
+
+        const countdownDates = Object.keys(timerData).sort();
+        let currentIndex = 0;
+        let targetDate = new Date(countdownDates[currentIndex]);
+
+        function updateCountdown() {
+            const now = new Date();
+            const timeDiff = targetDate - now;
+
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+            const milliseconds = Math.floor((timeDiff % 1000) / 10);
+
+            document.getElementById('days').innerText = String(days).padStart(2, '0');
+            document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+            document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+            document.getElementById('milliseconds').innerText = String(milliseconds).padStart(2, '0');
+
+            if (timeDiff < 0) {
+                currentIndex++;
+                if (currentIndex < countdownDates.length) {
+                    targetDate = new Date(countdownDates[currentIndex]);
+                    const content = timerData[countdownDates[currentIndex]].content;
+                    document.getElementById('countdown-label').innerText = content;
+                } else {
+                    clearInterval(countdownInterval);
+                    document.getElementById('days').innerText = '00';
+                    document.getElementById('hours').innerText = '00';
+                    document.getElementById('minutes').innerText = '00';
+                    document.getElementById('seconds').innerText = '00';
+                    document.getElementById('milliseconds').innerText = '00';
+                }
+            }
+        }
+
+        document.getElementById('countdown-label').innerText = timerData[countdownDates[currentIndex]].content;
+
+        const countdownInterval = setInterval(updateCountdown, 10);
+
+    </script>
 
 </body>
-
-<script>
-  // 메뉴 기능
-  document.querySelector('#hamburger-btn').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu');
-    const hamburger = document.getElementById('hamburger-1');
-    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    
-    this.setAttribute('aria-expanded', !expanded);
-    menu.classList.toggle('hidden');
-    hamburger.classList.toggle('is-active');
-  });
-
-</script>
 
 </html>
