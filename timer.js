@@ -1,4 +1,10 @@
 export default {
+  "2024-09-09 00:00:00": {
+    track: "BORN TO BE",
+    content: "테스트",
+    member: "ITZY",
+  },
+
   "2024-09-12 18:00:00": {
     track: "BORN TO BE",
     content: "내 생에 복날은,",
