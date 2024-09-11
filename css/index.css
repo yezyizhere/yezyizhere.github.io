@@ -1,21 +1,43 @@
 /* 햄버거 스타일 */
 .hamburger .line {
-    width: 20px;
-    height: 2px;
-    background-color: #ecf0f1;
-    display: block;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
+  width: 20px;
+  height: 2px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active .line:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.hamburger.is-active .line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@layer utilities {
+  .shadow-custom {
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
   }
-  
-  .hamburger.is-active .line:nth-child(2) {
-    opacity: 0;
+
+  .bg-custom-gradient {
+    background: linear-gradient(220deg, #731b14 3%, #260101 20%, #0d0402 30%);
   }
-  
-  .hamburger.is-active .line:nth-child(1) {
-    transform: translateY(5px) rotate(45deg);
+}
+
+@layer utilities {
+  .bg-custom-gradient {
+    background: linear-gradient(220deg, #731b14 3%, #260101 20%, #0d0402 30%);
   }
-  
-  .hamburger.is-active .line:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
