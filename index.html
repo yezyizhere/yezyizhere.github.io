@@ -14,11 +14,11 @@
 
         <style>
           .shadow-custom {
-            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.8);
           }
         
           .bg-custom-gradient {
-            background: linear-gradient(220deg, #731b14 3%, #260101 20%, #0d0402 30%);
+            background: linear-gradient(220deg, #fddcb1 3%, #f0cfa3 40%, #c6a77e 70%);
           }
         </style>
 
@@ -83,14 +83,14 @@
 
     <!-- 1.1 로고 -->
     <div class="flex justify-center">
-      <img src="/Image/Icon/borntobe.png" alt="Born To Be" class="mt-10">
+      <img src="/Image/Icon/gold.jpg" alt="Born To Be" class="">
     </div>
 
     <!-- 1. 유튜브 플레이어 -->
     <div class="container w-screen h-auto m-auto p-4 flex justify-center">
       <div class="aspect-[16/9] w-[90%] xl:w-[40%] relative">
         <iframe 
-          src="https://www.youtube-nocookie.com/embed/5e3rKInegeU?si=uD_flnT6W15IoRg4&autoplay=1" 
+          src="https://www.youtube.com/embed/UX-qsl00_rw?si=Xl0sBaxzYArFMzhS&autoplay=1&loop=1&playlist=UX-qsl00_rw" 
           title="YouTube video player" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" 
@@ -100,6 +100,7 @@
       </div>
     </div>
     
+    
     <!-- 2. 카운트 다운 -->
     <div class="container w-screen h-auto m-auto p-4 pb-0 pt-0 flex justify-center">
         <div class="w-[90%] xl:w-[40%] relative rounded-lg border-solid border-2 border-gray-300 shadow-custom">
@@ -107,14 +108,13 @@
             <!-- 2-1. 상위 자막 -->
 
             <!-- 있지 로고 -->
-            <p class="text-white text-xl font-bold text-center xl:text-2xl">ITZY</p>
-
+            <p class="text-black text-xl font-awesome text-center xl:text-2xl">ITZY</p>
+            <p class="text-black text-3xl font-bold text-center xl:text-6xl font-bold" style="text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.6);">「GOLD」</p>
             <!-- 타이틀명 -->
-            <p class="text-white text-2xl font-bold text-center xl:text-4xl">Will Comeback</p>
-            <!-- <p class="text-black text-2xl font-bold text-center xl:text-4xl">2024.xx.xx 18:00 (KST) Release</p> -->
+            <p class="text-black text-lg font-awesome text-center xl:text-4xl">2024.10.15 18:00 (KST) Release</p>
 
             <!-- 컨텐츠명 -->
-            <p id="countdown-label" class="text-gray-400 text-center xl:text-2xl xl:mt-3">COUNTDOWN</p>
+            <p id="countdown-label" class="font-bold text-gray-600 text-center text-xl xl:text-2xl xl:mt-3">COUNTDOWN</p>
     
             <!-- 2-2. 카운트다운 시계 -->
             <div class="db_title flex justify-center items-center text-center">
@@ -141,41 +141,47 @@
     <!-- 3. 목록 -->
     <!-- 타임라인 보기 버튼 -->
     <div class="container w-screen h-auto m-auto p-4 flex justify-center mt-3">
-      <button id="view-timeline-btn" class="bg-red-500 text-white py-2 px-4 rounded">
+      <button id="view-timeline-btn" class="bg-pink-500 text-white py-2 px-4 rounded">
           View Timeline
       </button>
     </div>
 
     <!-- 타임라인 모달 -->
     <div id="timeline-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
-        <div class="bg-white p-6 rounded-lg shadow-lg w-[90%] md:w-[60%] lg:w-[40%] xl:w-[30%] relative">
-            <button id="close-timeline-btn" class="absolute top-5 right-5 text-gray-600 hover:text-gray-900">
-                <i class="fas fa-times text-2xl"></i>
-            </button>
-            <h2 class="text-2xl font-bold mb-4">시간표</h2>
-            <ul id="timeline-content" class="list-disc space-y-2"></ul>
-        </div>
+      <div class="bg-pink-400 p-6 rounded-lg shadow-lg w-[90%] md:w-[60%] lg:w-[40%] xl:w-[30%] relative">
+          <button id="close-timeline-btn" class="absolute top-5 right-5 text-gray-600 hover:text-gray-900">
+              <i class="fas fa-times text-2xl"></i>
+          </button>
+          <h2 class="text-2xl font-bold mb-4">시간표</h2>
+          
+          <!-- 타임라인 내용을 감싸는 박스에 스크롤 추가 -->
+          <div class="max-h-80 overflow-y-scroll">
+              <ul id="timeline-content" class="list-disc space-y-2 font-bold"></ul>
+          </div>
+      </div>
     </div>
+
 
     <!-- 4. 사이트 이동 -->
     <div class="container w-screen h-auto m-auto p-4 pt-0 flex justify-center">
-      <div class="w-[90%] xl:w-[40%] relative rounded-lg border-solid border-2 border-gray-300 grid grid-cols-2 text-center p-4 gap-4 text-white">
-          <a href="/html/streaming.html" class="bg-gray-600 p-4 rounded-lg text-white hover:bg-gray-900 transition">원클릭스밍</a>
-          <a href="/html/vote.html" class="bg-gray-600 p-4 rounded-lg text-white hover:bg-gray-900 transition">투표</a>
-          <a href="https://x.com/for_midzy" class="bg-gray-600 p-4 rounded-lg text-white hover:bg-gray-900 transition">공방안내</a>
-          <a href="/html/cheer.html" class="bg-gray-600 p-4 rounded-lg text-white hover:bg-gray-900 transition">응원법</a>
+      <div class="w-[90%] xl:w-[40%] relative rounded-lg border-solid border-2 border-yellow-300 grid grid-cols-2 text-center p-4 gap-4">
+          <a href="/html/streaming.html" class="bg-pink-500 p-4 rounded-lg text-white hover:bg-pink-300 transition shadow-md shadow-yellow-500">원클릭스밍</a>
+          <a href="/html/vote.html" class="bg-pink-500 p-4 rounded-lg text-white hover:bg-pink-300 transition shadow-md shadow-yellow-500">투표</a>
+          <a href="https://x.com/for_midzy" class="bg-pink-500 p-4 rounded-lg text-white hover:bg-pink-300 transition shadow-md shadow-yellow-500">공방안내</a>
+          <a href="/html/cheer.html" class="bg-pink-500 p-4 rounded-lg text-white hover:bg-pink-300 transition shadow-md shadow-yellow-500">응원법</a>
       </div>
     </div>
+  
           
 
     <hr>
     <!-- footer접기 -->
     <div class="flex flex-col items-center p-3 mt-auto">
         <img src="/Image/Icon/midzy.png" alt="MIDZY" class="w-36">
-        <div class="text-sm font-semibold text-center text-white">
+        <div class="text-sm font-semibold text-center text-black">
             Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
             <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button
-                class="bg-gray-300 border-2 border-gray-300 border-solid rounded-lg text-black"><a
+                class="bg-pink-300 border-2 border-pink-300 border-solid rounded-lg text-black"><a
                     href="https://open.kakao.com/me/dang0526">문의하기</a></button>
             <br>Copyright ⓒ 2024 MIDZY All rights reserved.
         </div>
