@@ -10,87 +10,199 @@
     <meta property="og:image" content="/Image/Profile/photo.jpg">
     <link rel="icon" href="/Image/Icon/itzy_icon.png" />
     <link rel="stylesheet" href="/css/index.css">
-
+    <link rel="stylesheet" href="/css/pictue.css">
 </head>
-<body>
+
+<body class="max-h-full">
 
 <!-- ----------------------------------------------- header 파트 ------------------------------------------------- -->
     
 <!-- 헤더 접기 -->
-    <nav class="bg-gray-800">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-          <div class="relative flex h-16 items-center justify-between">
+<nav class="bg-gray-800">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
 
-            <!-- 메뉴 열고 닫기 -->
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-              <button id="hamburger-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu" aria-expanded="false">
-                <span class="absolute -inset-0.5"></span>
-                
-                <!-- 햄버거 아이콘 -->
-                <div class="hamburger" id="hamburger-1">
-                  <span class="line"></span>
-                  <span class="line"></span>
-                  <span class="line"></span>
-                </div>
-              </button>
-              
-            </div>
+      <!-- 메뉴 열고 닫기 -->
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button id="hamburger-btn" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="absolute -inset-0.5"></span>
 
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              
-              <!-- 아이콘 -->
-              <div class="flex flex-shrink-0 items-center">
-                <a href="/"><img class="h-8 w-9" src="/Image/Icon/itzy_icon_white.png" alt="ITZY"></a>
-              </div>
+          <!-- 햄버거 아이콘 -->
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </button>
 
-              <!-- pc 메뉴 -->
-              <div class="hidden sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                  <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">홈</a>
-                  <a href="/html/picture.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">사진</a>
-                  <a href="/html/music.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">음반</a>
-                  <a href="/html/site.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">공식 사이트</a>
-                  <a href="/html/streaming.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">스트리밍</a>
-                  <a href="/html/game.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">게임</a>
-                </div>
-              </div>
+      </div>
 
-            </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+        <!-- 아이콘 -->
+        <div class="flex flex-shrink-0 items-center">
+          <a href="/"><img class="h-8 w-9" src="/Image/Icon/itzy_icon_white.png" alt="ITZY"></a>
+        </div>
+
+        <!-- pc 메뉴 -->
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">홈</a>
+            <a href="/html/picture.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">사진</a>
+            <a href="/html/music.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">음반</a>
+            <a href="/html/site.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">공식 사이트</a>
+            <a href="/html/streaming.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">스트리밍</a>
+            <a href="/html/game.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">게임</a>
           </div>
         </div>
-      
-        <!-- 모바일 메뉴 -->
-        <div class="sm:hidden hidden" id="mobile-menu">
-          <div class="space-y-1 px-2 pb-3 pt-2">
-            <a href="/" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">홈</a>
-            <a href="/html/picture.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">사진</a>
-            <a href="/html/music.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">음반</a>
-            <a href="/html/site.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">공식 사이트</a>
-            <a href="/html/streaming.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">스트리밍</a>
-            <a href="/html/game.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">게임</a>
-          </div>
-        </div>
-      </nav>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 모바일 메뉴 -->
+  <div class="sm:hidden hidden" id="mobile-menu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <a href="/" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">홈</a>
+      <a href="/html/picture.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">사진</a>
+      <a href="/html/music.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">음반</a>
+      <a href="/html/site.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">공식 사이트</a>
+      <a href="/html/streaming.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">스트리밍</a>
+      <a href="/html/game.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">게임</a>
+    </div>
+  </div>
+</nav>
       
 <!-- ----------------------------------------------- body 파트 ------------------------------------------------- -->
 
-<div>
-    <h1>개발중입니다. 이번주 내로 완성하겠습니다</h1>
+<div class="mt-3 container grid w-screen h-auto grid-cols-1 p-6 bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 pt-4 mb-3 text-center font-bold text-2xl rounded-lg shadow-lg">
+  <h1 class="text-white">투표 어플 설치/실행 링크</h1>
 </div>
+
+<div class="container grid w-screen h-auto grid-cols-2 gap-2 p-4 pt-2 pb-0 mx-auto mb-2">
+
+  <fieldset class="border border-gray-300 p-2 w-full h-auto">
+    <legend class="text-lg font-bold">엠카운트다운</legend>
+    <div class="flex justify-between gap-4 flex-wrap">
+      <!-- 첫 번째 행 -->
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="play.google.com/store/apps/details?id=world.mnetplus" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/M_Countdown_logo.png" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">Android</p>
+      </div>
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="apps.apple.com/us/app/mnet-plus/id6443405421" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/M_Countdown_logo.png" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">IOS</p>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="border border-gray-300 p-2 w-full h-auto">
+    <legend class="text-lg font-bold">뮤직뱅크</legend>
+    <div class="flex justify-between gap-4 flex-wrap">
+      <!-- 첫 번째 행 -->
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="play.google.com/store/apps/details?id=com.smtn.allstarsolutions" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/music_bank.jpg" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">Android</p>
+      </div>
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="apps.apple.com/us/app/%EC%98%AC%EC%B0%A8%ED%8A%B8-allchart/id6475750256" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/music_bank.jpg" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">IOS</p>
+      </div>
+    </div>
+  </fieldset>
+
+</div>
+
+<div class="container grid w-screen h-auto grid-cols-2 gap-2 p-4 pt-2 pb-0 mx-auto mb-2">
+
+  <fieldset class="border border-gray-300 p-2 w-full h-auto">
+    <legend class="text-lg font-bold">인기가요 (사전)</legend>
+    <div class="flex justify-between gap-4 flex-wrap">
+      <!-- 첫 번째 행 -->
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="play.google.com/store/apps/details?id=com.lguplus.diggerz" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/ingi.jpg" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">Android</p>
+      </div>
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="apps.apple.com/us/app/diggus-%EB%94%94%EA%B1%B0%EC%8A%A4/id64695772699" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/ingi.jpg" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">IOS</p>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="border border-gray-300 p-2 w-full h-auto">
+    <legend class="text-lg font-bold">인기가요 (생방)</legend>
+    <div class="flex justify-between gap-4 flex-wrap">
+      <!-- 첫 번째 행 -->
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="play.google.com/store/apps/details?id=com.dalc" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/ingi.jpg" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">Android</p>
+      </div>
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="apps.apple.com/us/app/higher-%ED%95%98%EC%9D%B4%EC%96%B4/id1672001935" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/ingi.jpg" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">IOS</p>
+      </div>
+    </div>
+  </fieldset>
+
+</div>
+
+<div class="container grid w-screen h-auto grid-cols-2 gap-2 p-4 pt-2 pb-0 mx-auto mb-2">
+
+  <fieldset class="border border-gray-300 p-2 w-full h-auto">
+    <legend class="text-lg font-bold">음악중심</legend>
+    <div class="flex justify-between gap-4 flex-wrap">
+      <!-- 첫 번째 행 -->
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="play.google.com/store/apps/details?id=com.vlending.apps.mubeat" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/music_center.jpg" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">Android</p>
+      </div>
+      <div class="flex flex-col items-center w-auto max-w-xs flex-shrink">
+        <a href="apps.apple.com/us/app/mubeat-for-kpop-lovers/id1320789688" class="flex justify-center items-center mb-2">
+          <img src="/Image/Icon/music_center.jpg" class="rounded-lg w-14 h-14">
+        </a>
+        <p class="text-center">IOS</p>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset class="border border-gray-300 p-2 w-full h-auto hidden"></fieldset>
+
+</div>
+
 
 <!-- ----------------------------------------------- footer 파트 ------------------------------------------------- -->
  
-  <!-- footer접기 -->
-  <div class="flex flex-col items-center p-3 mt-5 border border-t-gray-400 border-b-white">
-    <img src="/Image/Icon/midzy.png" alt="MIDZY" class="w-36">
-    <div class="text-sm font-semibold text-center text-black">
-        Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
-        <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button
-            class="bg-gray-300 border-2 border-gray-300 border-solid rounded-lg"><a
-                href="https://open.kakao.com/me/dang0526">문의하기</a></button>
-        <br>Copyright ⓒ 2024 MIDZY All rights reserved.
-    </div>
+<!-- footer접기 -->
+ <hr class="mt-3">
+<div class="flex flex-col items-center p-2">
+  <img src="/Image/Icon/midzy.png" alt="MIDZY" class="w-36">
+  <div class="text-sm font-semibold text-center text-black">
+      Contact Us : itmidnal0212@gmail.com<br />Made by : 당덩어리 (
+      <i class="text-yellow-400 fa-regular fa-comment"></i> dang0526 ) <button
+          class="bg-gray-300 border-2 border-gray-300 border-solid rounded-lg text-black"><a
+              href="https://open.kakao.com/me/dang0526">문의하기</a></button>
+      <br>Copyright ⓒ 2024 MIDZY All rights reserved.
   </div>
+</div>
 
 </body>
 
