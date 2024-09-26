@@ -38,7 +38,7 @@ export default {
 
   "2024-10-04 20:00:00": {
     track: "GOLD",
-    content: "믿지3기 팬미팅 티켓팅",
+    content: "MIDZY 3th Titketing",
     member: "ITZY",
   },
 
@@ -50,7 +50,7 @@ export default {
 
   "2024-10-07 20:00:00": {
     track: "GOLD",
-    content: "팬미팅 일반 티켓팅",
+    content: "Fanmeeting Titketing",
     member: "ITZY",
   },
 
