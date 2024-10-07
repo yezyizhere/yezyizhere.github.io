@@ -1,306 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    
     <title>믿지 스밍해!</title>
     <meta property="og:image" content="/Image/Profile/gold_pic.jpg">
     <link rel="icon" href="Image/Icon/itzy_icon.png" />
     <link rel="stylesheet" href="/css/streaming.css">
-
 </head>
 
-<body>
+<body class="h-screen flex flex-col items-center justify-start">
 
-    <div class="relative h-screen">
-        <div class="absolute top-0 left-0 right-0 text-center text-2xl py-4 z-10">
-            <div class="flex flex-col items-center mt-16">
+    <!-- 로고 영역 -->
+    <div class="logo-wrapper w-full text-center mt-24">
+        <a href="/">
+            <img src="/Image/Icon/itzy_icon.png" alt="ITZY" class="w-12 mx-auto">
+        </a>
+    </div>
 
-                <!-- 로고삽입 -->
-                <a href="/"><img src="/Image/Icon/itzy_icon.png" alt="ITZY" class="w-12 mb-3"></a>
-
-                <!-- 네비게이션 바 1 -->
-                <nav class="w-36 mx-auto border-2 border-b-0 border-gray-300">
-                  <div class="flex h-16 items-center justify-between">
-                      <div class="mx-auto text-lg">MELON</div>
-                      <div class="flex items-center">
-                          <button id="hamburger-btn-1" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-1" aria-expanded="false">
-                              <span class="absolute -inset-0.5"></span>
-                              <div class="hamburger" id="hamburger-1-1">
-                                  <span class="line"></span>
-                                  <span class="line"></span>
-                                  <span class="line"></span>
-                              </div>
-                          </button>
-                      </div>
-                  </div>
-                  <div id="mobile-menu-1" class="hidden">
-                      <div class="space-y-1 px-2 pb-3">
-                          <!-- 1번의 내부 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex h-14 items-center justify-between">
-                                  <div class="mx-auto text-lg">Android</div>
-                                  <div class="flex items-center">
-                                      <button id="hamburger-btn-2" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-2" aria-expanded="false">
-                                          <span class="absolute -inset-0.5"></span>
-                                          <div class="hamburger" id="hamburger-2-1">
-                                              <span class="line"></span>
-                                              <span class="line"></span>
-                                              <span class="line"></span>
-                                          </div>
-                                      </button>
-                                  </div>
-                              </div>
-                              <div id="mobile-menu-2" class="hidden">
-                                  <div class="space-y-1 px-2 pb-3">
-                                      <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066915,37066917,37066918,37066919">1</a></button>
-                                      <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066920,37066921,37066922,37066923">2</a></button>
-                                      <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066924,37066915,37066919">3</a></button>
-                                      <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066920,37066921,37066922,37066923">4</a></button>
-                                  </div>
-                              </div>
-                          </nav>
-              
-                          <!-- 2번의 내부 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066915,37066917,37066918,37066919,37066916,37066920,37066921,37066922,37066923,37066916,37066924,37066915,37066919,37066916,37066920,37066921,37066922,37066923">IOS</a></button>
-                              </div>
-                          </nav>
-              
-                          <!-- 3번의 내부 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex h-14 items-center justify-between">
-                                  <div class="mx-auto text-lg">PC</div>
-                                  <div class="flex items-center">
-                                      <button id="hamburger-btn-3" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-3" aria-expanded="false">
-                                          <span class="absolute -inset-0.5"></span>
-                                          <div class="hamburger" id="hamburger-3-1">
-                                              <span class="line"></span>
-                                              <span class="line"></span>
-                                              <span class="line"></span>
-                                          </div>
-                                      </button>
-                                  </div>
-                              </div>
-                              <div id="mobile-menu-3" class="hidden">
-                                  <div class="space-y-1 px-2 pb-3">
-                                      <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?cType=1&menuId=1000002721&cList=37066916,37066915,37066917,37066918,37066919">1</a></button>
-                                      <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?cType=1&menuId=1000002721&cList=37066916,37066920,37066921,37066922,37066923">2</a></button>
-                                      <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?cType=1&menuId=1000002721&cList=37066916,37066924,37066915,37066919">3</a></button>
-                                      <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?cType=1&menuId=1000002721&cList=37066916,37066920,37066921,37066922,37066923">4</a></button>
-                                  </div>
-                              </div>
-                          </nav>
-                      </div>
-                  </div>
-              </nav>
-              
-        
-                <!-- 네비게이션 바 2 -->
-                <nav class="w-36 mx-auto border-2 border-b-0 border-gray-300">
-                  <div class="flex h-16 items-center justify-between">
-                      <div class="mx-auto text-lg">GENIE</div>
-                      <div class="flex items-center">
-                          <button id="hamburger-btn-4" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-4" aria-expanded="false">
-                              <span class="absolute -inset-0.5"></span>
-                              <div class="hamburger" id="hamburger-4-1">
-                                  <span class="line"></span>
-                                  <span class="line"></span>
-                                  <span class="line"></span>
-                              </div>
-                          </button>
-                      </div>
-                  </div>
-                  <div id="mobile-menu-4" class="hidden">
-                      <div class="space-y-1 px-2 pb-3">
-                          <!-- 지니 1번의 내부 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-sky-300" type="button"><a href="cromegenie://scan/?landing_type=31&landing_target=104916260;104916259;104916261;104916262;104916263;104916260;104916264;104916265;104916266;104916267;104916260;104916268;104916259;104916263;104916260;104916264;104916265;104916266;104916267">Android</a></button>
-                              </div>
-                          </nav>
-              
-                          <!-- 지니 2번의 내부 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-sky-300" type="button"><a href="ktolleh00167://landing/?landing_type=31&landing_target=104916260;104916259;104916261;104916262;104916263;104916260;104916264;104916265;104916266;104916267;104916260;104916268;104916259;104916263;104916260;104916264;104916265;104916266;104916267">IOS</a></button>
-                              </div>
-                          </nav>
-              
-                          <!-- 지니 3번의 내부 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-sky-300" type="button"><a href="https://www.genie.co.kr/player/shareProcessV2?xgnm=104916260;104916259;104916261;104916262;104916263;104916260;104916264;104916265;104916266;104916267;104916260;104916268;104916259;104916263;104916260;104916264;104916265;104916266;104916267">PC</a></button>
-                              </div>
-                          </nav>
-                      </div>
-                  </div>
-              </nav>
-              
-        
-                <!-- 네비게이션 바 3 -->
-                <nav class="w-36 mx-auto border-2 border-b-0 border-gray-300">
-                  <div class="flex h-16 items-center justify-between">
-                      <div class="mx-auto text-lg">BUGS</div>
-                      <div class="flex items-center">
-                          <button id="hamburger-btn-5" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-5" aria-expanded="false">
-                              <span class="absolute -inset-0.5"></span>
-                              <div class="hamburger" id="hamburger-5-1">
-                                  <span class="line"></span>
-                                  <span class="line"></span>
-                                  <span class="line"></span>
-                              </div>
-                          </button>
-                      </div>
-                  </div>
-                  <div id="mobile-menu-5" class="hidden">
-                      <div class="space-y-1 px-2 pb-3">
-                          <!-- 스마트폰 버튼 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-orange-300" type="button">
-                                      <a href="bugs3://app/tracks/lists?title=전체듣기&miniplay=Y&track_ids=6228690|6226428|6227821|6228691|6226906|6228690|6228692|6227170|6227232|6227513|6228690|6228693|6226428|6226906|6228690|6228692|6227170|6227232|6227513">스마트폰</a>
-                                  </button>
-                              </div>
-                          </nav>
-                          <!-- PC 버튼 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-orange-300" type="button">
-                                      <a href="https://music.bugs.co.kr/newPlayer?trackId=6228690,6226428,6227821,6228691,6226906,6228690,6228692,6227170,6227232,6227513,6228690,6228693,6226428,6226906,6228690,6228692,6227170,6227232,6227513">PC</a>
-                                  </button>
-                              </div>
-                          </nav>
-                      </div>
-                  </div>
-              </nav>
-              
-        
-                <!-- 네비게이션 바 4 -->
-                <nav class="w-36 mx-auto border-2 border-gray-300">
-                  <div class="flex h-16 items-center justify-between">
-                      <div class="mx-auto text-lg">VIBE</div>
-                      <div class="flex items-center">
-                          <button id="hamburger-btn-6" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-6" aria-expanded="false">
-                              <span class="absolute -inset-0.5"></span>
-                              <div class="hamburger" id="hamburger-6-1">
-                                  <span class="line"></span>
-                                  <span class="line"></span>
-                                  <span class="line"></span>
-                              </div>
-                          </button>
-                      </div>
-                  </div>
-                  <div id="mobile-menu-6" class="hidden">
-                      <div class="space-y-1 px-2 pb-3">
-                          <!-- 메뉴 항목들 -->
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-red-300" type="button">
-                                      <a href="vibe://listen?version=3&trackIds=81984905,81984904,81984906,81984907,81984908">1</a>
-                                  </button>
-                              </div>
-                          </nav>
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-red-300" type="button">
-                                      <a href="vibe://listen?version=3&trackIds=81984905,81984909,81984910,81984911,81984912">2</a>
-                                  </button>
-                              </div>
-                          </nav>
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-red-300" type="button">
-                                      <a href="vibe://listen?version=3&trackIds=81984905,81984913,81984904,81984908">3</a>
-                                  </button>
-                              </div>
-                          </nav>
-                          <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
-                              <div class="flex items-center justify-between">
-                                  <button class="w-full text-xl p-2 text-center hover:bg-red-300" type="button">
-                                      <a href="vibe://listen?version=3&trackIds=81984905,81984909,81984910,81984911,81984912">4</a>
-                                  </button>
-                              </div>
-                          </nav>
-                      </div>
-                  </div>
-              </nav>
-              
-              
+    <!-- 네비게이션 바 1 (MELON) -->
+    <nav class="w-36 mx-auto border-2 border-gray-300 border-b-0 mt-4">
+        <div class="flex h-16 items-center justify-between">
+            <div class="mx-auto text-lg">MELON</div>
+            <div class="flex items-center">
+                <button id="hamburger-btn-1" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-1" aria-expanded="false">
+                    <div class="hamburger" id="hamburger-1-1">
+                        <i class="fa-solid fa-chevron-down text-black"></i>
+                    </div>
+                </button>
             </div>
         </div>
-        
-    </div>
-    
-    </body>
+        <div id="mobile-menu-1" class="hidden">
+            <div class="space-y-1 px-2 pb-3">
+                <!-- Android 서브메뉴 -->
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex h-14 items-center justify-between">
+                        <div class="mx-auto text-lg">Android</div>
+                        <div class="flex items-center">
+                            <button id="hamburger-btn-2" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-2" aria-expanded="false">
+                                <div class="hamburger" id="hamburger-2-1">
+                                    <i class="fa-solid fa-chevron-down text-black"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="mobile-menu-2" class="hidden">
+                        <div class="space-y-1 px-2 pb-3">
+                            <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066915,37066917,37066918,37066919">1</a></button>
+                            <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066920,37066921,37066922,37066923">2</a></button>
+                            <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066924,37066915,37066919">3</a></button>
+                            <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066920,37066921,37066922,37066923">4</a></button>
+                        </div>
+                    </div>
+                </nav>
 
-<script>
-  // 메뉴 기능
-  document.querySelector('#hamburger-btn-1').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu-1');
-    const hamburger = document.getElementById('hamburger-1-1');
-    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    
-    this.setAttribute('aria-expanded', !expanded);
-    menu.classList.toggle('hidden');
-    hamburger.classList.toggle('is-active');
-  });
+                <!-- IOS 서브메뉴 -->
+                <nav class="w-32 mx-auto rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-green-300 h-14" type="button">
+                            <a href="melonapp://play?menuid=0&ctype=1&cid=37066916,37066915,37066917,37066918,37066919,37066916,37066920,37066921,37066922,37066923,37066916,37066924,37066915,37066919,37066916,37066920,37066921,37066922,37066923">IOS</a>
+                        </button>
+                    </div>
+                </nav>
+                
 
-  document.querySelector('#hamburger-btn-2').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu-2');
-    const hamburger = document.getElementById('hamburger-2-1');
-    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    
-    this.setAttribute('aria-expanded', !expanded);
-    menu.classList.toggle('hidden');
-    hamburger.classList.toggle('is-active');
-  });
+                <!-- PC 서브메뉴 -->
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex h-14 items-center justify-between">
+                        <div class="mx-auto text-lg">PC</div>
+                        <div class="flex items-center">
+                            <button id="hamburger-btn-3" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-3" aria-expanded="false">
+                                <div class="hamburger" id="hamburger-3-1">
+                                    <i class="fa-solid fa-chevron-down text-black"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="mobile-menu-3" class="hidden">
+                        <div class="space-y-1 px-2 pb-3">
+                            <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?cType=1&menuId=1000002721&cList=37066916,37066915,37066917,37066918,37066919">1</a></button>
+                            <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?cType=1&menuId=1000002721&cList=37066916,37066920,37066921,37066922,37066923">2</a></button>
+                            <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?cType=1&menuId=1000002721&cList=37066916,37066924,37066915,37066919">3</a></button>
+                            <button class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300" type="button"><a href="melonapp://play?cType=1&menuId=1000002721&cList=37066916,37066920,37066921,37066922,37066923">4</a></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
 
-  document.querySelector('#hamburger-btn-3').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu-3');
-    const hamburger = document.getElementById('hamburger-3-1');
-    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    
-    this.setAttribute('aria-expanded', !expanded);
-    menu.classList.toggle('hidden');
-    hamburger.classList.toggle('is-active');
-  });
+    <!-- 네비게이션 바 2 (GENIE) -->
+    <nav class="w-36 mx-auto border-2 border-b-0 border-gray-300">
+        <div class="flex h-16 items-center justify-between">
+            <div class="mx-auto text-lg">GENIE</div>
+            <div class="flex items-center">
+                <button id="hamburger-btn-4" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-4" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <div class="hamburger" id="hamburger-4-1">
+                        <i class="fa-solid fa-chevron-down text-black"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu-4" class="hidden">
+            <div class="space-y-1 px-2 pb-3">
+                <!-- 지니 1번의 내부 -->
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-sky-300" type="button"><a href="cromegenie://scan/?landing_type=31&landing_target=104916260;104916259;104916261;104916262;104916263;104916260;104916264;104916265;104916266;104916267;104916260;104916268;104916259;104916263;104916260;104916264;104916265;104916266;104916267">Android</a></button>
+                    </div>
+                </nav>
+                <!-- 지니 2번의 내부 -->
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-sky-300" type="button"><a href="ktolleh00167://landing/?landing_type=31&landing_target=104916260;104916259;104916261;104916262;104916263;104916260;104916264;104916265;104916266;104916267;104916260;104916268;104916259;104916263;104916260;104916264;104916265;104916266;104916267">IOS</a></button>
+                    </div>
+                </nav>
+                <!-- 지니 3번의 내부 -->
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-sky-300" type="button"><a href="https://www.genie.co.kr/player/shareProcessV2?xgnm=104916260;104916259;104916261;104916262;104916263;104916260;104916264;104916265;104916266;104916267;104916260;104916268;104916259;104916263;104916260;104916264;104916265;104916266;104916267">PC</a></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
 
-  document.querySelector('#hamburger-btn-4').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu-4');
-    const hamburger = document.getElementById('hamburger-4-1');
-    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    
-    this.setAttribute('aria-expanded', !expanded);
-    menu.classList.toggle('hidden');
-    hamburger.classList.toggle('is-active');
-  });
+    <!-- 네비게이션 바 3 (BUGS) -->
+    <nav class="w-36 mx-auto border-2 border-b-0 border-gray-300">
+        <div class="flex h-16 items-center justify-between">
+            <div class="mx-auto text-lg">BUGS</div>
+            <div class="flex items-center">
+                <button id="hamburger-btn-5" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-5" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <div class="hamburger" id="hamburger-5-1">
+                        <i class="fa-solid fa-chevron-down text-black"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu-5" class="hidden">
+            <div class="space-y-1 px-2 pb-3">
+                <!-- 스마트폰 버튼 -->
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-orange-300" type="button">
+                            <a href="bugs3://app/tracks/lists?title=전체듣기&miniplay=Y&track_ids=6228690|6226428|6227821|6228691|6226906|6228690|6228692|6227170|6227232|6227513|6228690|6228693|6226428|6226906|6228690|6228692|6227170|6227232|6227513">스마트폰</a>
+                        </button>
+                    </div>
+                </nav>
+                <!-- PC 버튼 -->
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-orange-300" type="button">
+                            <a href="https://music.bugs.co.kr/newPlayer?trackId=6228690,6226428,6227821,6228691,6226906,6228690,6228692,6227170,6227232,6227513,6228690,6228693,6226428,6226906,6228690,6228692,6227170,6227232,6227513">PC</a>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
 
-  document.querySelector('#hamburger-btn-5').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu-5');
-    const hamburger = document.getElementById('hamburger-5-1');
-    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    
-    this.setAttribute('aria-expanded', !expanded);
-    menu.classList.toggle('hidden');
-    hamburger.classList.toggle('is-active');
-  });
+    <!-- 네비게이션 바 4 (VIBE) -->
+    <nav class="w-36 mx-auto border-2 border-gray-300">
+        <div class="flex h-16 items-center justify-between">
+            <div class="mx-auto text-lg">VIBE</div>
+            <div class="flex items-center">
+                <button id="hamburger-btn-6" type="button" class="relative inline-flex items-center justify-center rounded-md p-3 text-gray-400" aria-controls="mobile-menu-6" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <div class="hamburger" id="hamburger-6-1">
+                        <i class="fa-solid fa-chevron-down text-black"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu-6" class="hidden">
+            <div class="space-y-1 px-2 pb-3">
+                <!-- 메뉴 항목들 -->
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-red-300" type="button">
+                            <a href="vibe://listen?version=3&trackIds=81984905,81984904,81984906,81984907,81984908">1</a>
+                        </button>
+                    </div>
+                </nav>
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-red-300" type="button">
+                            <a href="vibe://listen?version=3&trackIds=81984905,81984909,81984910,81984911,81984912">2</a>
+                        </button>
+                    </div>
+                </nav>
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-red-300" type="button">
+                            <a href="vibe://listen?version=3&trackIds=81984905,81984913,81984904,81984908">3</a>
+                        </button>
+                    </div>
+                </nav>
+                <nav class="w-32 mx-auto border-2 border-gray-300 rounded-md">
+                    <div class="flex items-center justify-between">
+                        <button class="w-full text-xl p-2 text-center hover:bg-red-300" type="button">
+                            <a href="vibe://listen?version=3&trackIds=81984905,81984909,81984910,81984911,81984912">4</a>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </nav>
 
-  document.querySelector('#hamburger-btn-6').addEventListener('click', function() {
-    const menu = document.getElementById('mobile-menu-6');
-    const hamburger = document.getElementById('hamburger-6-1');
-    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
-    
-    this.setAttribute('aria-expanded', !expanded);
-    menu.classList.toggle('hidden');
-    hamburger.classList.toggle('is-active');
-  });
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerBtns = document.querySelectorAll('button[id^="hamburger-btn-"]');
+            const mobileMenus = document.querySelectorAll('div[id^="mobile-menu-"]');
 
-</script>
+            hamburgerBtns.forEach((btn, index) => {
+                btn.addEventListener('click', function () {
+                    const menu = document.getElementById(`mobile-menu-${index + 1}`);
+                    const icon = this.querySelector('i');
+
+                    mobileMenus.forEach((menu, menuIndex) => {
+                        if (index !== menuIndex && !(index === 1 || index === 2)) {
+                            menu.classList.add('hidden');
+                            const otherIcon = document.querySelector(`button[id="hamburger-btn-${menuIndex + 1}"] i`);
+                            if (otherIcon) {
+                                otherIcon.classList.remove('fa-chevron-up');
+                                otherIcon.classList.add('fa-chevron-down');
+                            }
+                        }
+                    });
+
+                    if (menu.classList.contains('hidden')) {
+                        menu.classList.remove('hidden');
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        menu.classList.add('hidden');
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+
+
+    </script>
+</body>
 
 </html>
