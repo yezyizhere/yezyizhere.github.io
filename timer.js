@@ -114,6 +114,12 @@ export default {
     member: "ITZY",
   },
 
+  "2024-10-25 09:00:00": {
+    track: "GOLD",
+    content: "POP-UP OPEN",
+    member: "ITZY",
+  },
+
   "2024-10-25 13:00:00": {
     track: "GOLD",
     content: "\"US PHYSICAL\" RELEASE",
