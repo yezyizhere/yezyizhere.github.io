@@ -90,6 +90,18 @@ export default {
     member: "ITZY",
   },
 
+  "2024-10-18 17:00:00": {
+    track: "GOLD",
+    content: "POP-UP Information open",
+    member: "ITZY",
+  },
+  
+  "2024-10-21 20:00:00": {
+    track: "GOLD",
+    content: "POP-UP pre-open",
+    member: "ITZY",
+  },
+
   "2024-10-23 00:00:00": {
     track: "GOLD",
     content: "\"Imaginary Friend\" M/V TEASER #1",
