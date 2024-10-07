@@ -66,9 +66,21 @@ export default {
     member: "ITZY",
   },
 
+  "2024-10-11 14:00:00": {
+    track: "GOLD",
+    content: "Gold POP-UP 정보",
+    member: "ITZY",
+  },
+
   "2024-10-14 00:00:00": {
     track: "GOLD",
     content: "ALBUM SPOILER",
+    member: "ITZY",
+  },
+
+  "2024-10-14 19:00:00": {
+    track: "GOLD",
+    content: "골드 팝업 사전예약",
     member: "ITZY",
   },
 
@@ -90,15 +102,21 @@ export default {
     member: "ITZY",
   },
 
+  "2024-10-16 09:00:00": {
+    track: "GOLD",
+    content: "GOLD POP-UP OPEN",
+    member: "ITZY",
+  },
+
   "2024-10-18 17:00:00": {
     track: "GOLD",
-    content: "POP-UP Information open",
+    content: "팬미팅 팝업 정보 공개",
     member: "ITZY",
   },
   
   "2024-10-21 20:00:00": {
     track: "GOLD",
-    content: "POP-UP pre-open",
+    content: "팬미팅 팝업 사전 예약 페이지",
     member: "ITZY",
   },
 
@@ -116,7 +134,7 @@ export default {
 
   "2024-10-25 09:00:00": {
     track: "GOLD",
-    content: "POP-UP OPEN",
+    content: "Fanmeeting POP-UP OPEN",
     member: "ITZY",
   },
 
