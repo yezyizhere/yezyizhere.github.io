@@ -122,13 +122,13 @@ export default {
 
   "2024-10-23 00:00:00": {
     track: "GOLD",
-    content: "\"Imaginary Friend\" M/V TEASER #1",
+    content: "Imaginary Friend M/V TEASER #1",
     member: "ITZY",
   },
 
   "2024-10-25 00:00:00": {
     track: "GOLD",
-    content: "\"Imaginary Friend\" M/V TEASER #2",
+    content: "Imaginary Friend M/V TEASER #2",
     member: "ITZY",
   },
 
@@ -146,13 +146,25 @@ export default {
 
   "2024-10-27 00:00:00": {
     track: "GOLD",
-    content: "\"Imaginary Friend\" PHOTO",
+    content: "Imaginary Friend PHOTO",
     member: "ITZY",
   },
 
   "2024-10-28 00:00:00": {
     track: "GOLD",
-    content: "\"Imaginary Friend\" M/V",
+    content: "Imaginary Friend M/V",
+    member: "ITZY",
+  },
+
+  "2024-10-29 00:00:00": {
+    track: "GOLD",
+    content: "Imaginary Friend Performance Video",
+    member: "ITZY",
+  },
+
+  "2024-10-30 00:00:00": {
+    track: "GOLD",
+    content: "Imaginary Friend Dance Practice",
     member: "ITZY",
   },
 
