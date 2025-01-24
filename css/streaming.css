@@ -1,0 +1,9 @@
+.hidden { display: none; }
+
+.logo-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: white; /* 배경을 고정 */
+  padding-bottom: 10px;
+  z-index: 10; /* 메뉴보다 우선 배치 */
+}
