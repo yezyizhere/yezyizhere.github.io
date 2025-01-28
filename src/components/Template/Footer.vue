@@ -3,7 +3,7 @@
   <!-- Ending Credit -->
   <div class="flex flex-col items-center p-3 mt-auto">
     <img
-      src="https://github.com/yezyizhere/yezyizhere.github.io/blob/main/Image/Icon/midzy.png?raw=true"
+      src="../../assets/picture/home/midzy.png"
       alt="MIDZY"
       class="w-36"
     />
