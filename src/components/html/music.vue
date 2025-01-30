@@ -262,6 +262,7 @@ export default {
 
         "https://drive.google.com/file/d/1GyNw5xgJKYnnRT1Qw36AUnqhAOjeXNNI/view?usp=drive_link",
         "https://drive.google.com/file/d/1DbPE0EGIzB51sZYD1tb_gO-hnS_1PIRJ/view?usp=drive_link",
+        "https://drive.google.com/file/d/1xCgyHGz9IBiB4PbjxzF3Q_F0yUJ5248V/view?usp=drive_link",
         "https://drive.google.com/file/d/1jJpV1VW15XPTvc7FgFKzj7g7zJKsKnrj/view?usp=drive_link",
       ],
       titleCoverit: [
