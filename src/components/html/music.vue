@@ -249,7 +249,7 @@ export default {
         "https://pbs.twimg.com/media/GYYXSI9aYAA-YKw?format=jpg&name=small",
         "https://pbs.twimg.com/media/GdNBQkcbgAAr2Sr?format=jpg&name=small",
         "https://pbs.twimg.com/media/GfaLUI3aQAAMerJ?format=jpg&name=small",
-        "https://pbs.twimg.com/media/GXGIXIwbEAQ5hlK?format=jpg&name=small",
+        "https://pbs.twimg.com/media/GfyM0C9asAAhL2Y?format=jpg&name=small",
       ],
       linksCoverit: [
         "https://drive.google.com/file/d/16mAbFOT5rOF_KWSIbi3zpwzNVOkNRw2l/view?usp=drive_link",
