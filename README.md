@@ -1,24 +1,7 @@
 # itzy
 
-## Project setup
-```
-npm install
-```
+<접속 불가> 만약 이 페이지가 보인다면
+open.kakao.com/me/dang0526 으로 연락주세요
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+There is a problem with the server.
+Please contact me at the address above
