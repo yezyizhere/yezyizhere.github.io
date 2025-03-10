@@ -3,7 +3,7 @@
   <body class="h-screen flex flex-col items-center justify-start">
     <!-- 로고 영역 -->
     <div class="logo-wrapper w-full text-center mt-24">
-      <p class="text-3xl text-yellow-500 font-bold">GOLD</p>
+      <p class="text-3xl text-black font-bold">Air</p>
     </div>
 
     <!-- 네비게이션 바 1 (MELON) -->
@@ -47,7 +47,7 @@
             <div id="mobile-menu-2" class="hidden">
               <div class="space-y-1 px-2 pb-3">
                 <a
-                  href="melonapp://play?menuid=0&ctype=1&cid=38100188,38100189,38100190,38100191,38100192"
+                  href="melonapp://play?menuid=0&ctype=1&cid=38638672,38638673,38638674,38638675,37066919"
                   ><button
                     class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300 mb-2"
                     type="button"
@@ -56,7 +56,7 @@
                   </button></a
                 >
                 <a
-                  href="melonapp://play?menuid=0&ctype=1&cid=38100188,38100189,38100193,38100194,38100195"
+                  href="melonapp://play?menuid=0&ctype=1&cid=38638672,38100188,38100189,37066916,37066915"
                   ><button
                     class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300 mb-2"
                     type="button"
@@ -65,7 +65,7 @@
                   </button></a
                 >
                 <a
-                  href="melonapp://play?menuid=0&ctype=1&cid=38100188,38100189,38100196,38100197,38100198"
+                  href="melonapp://play?menuid=0&ctype=1&cid=38638672,38638673,38638674,38638675,37066919"
                   ><button
                     class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300 mb-2"
                     type="button"
@@ -74,7 +74,7 @@
                   </button></a
                 >
                 <a
-                  href="melonapp://play?menuid=0&ctype=1&cid=38100188,38100189,38100190,38100192"
+                  href="melonapp://play?menuid=0&ctype=1&cid=38638672,38100188,38100189,37066916"
                   ><button
                     class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300"
                     type="button"
@@ -94,7 +94,7 @@
                 type="button"
               >
                 <a
-                  href="melonapp://play?menuid=0&ctype=1&cid=38100188,38100189,38100190,38100191,38100192,38100188,38100189,38100193,38100194,38100195,38100188,38100189,38100196,38100197,38100198,38100188,38100189,38100190,38100192"
+                  href="melonapp://play?menuid=0&ctype=1&cid=38638672,38638673,38638674,38638675,37066919,38638672,38100188,38100189,37066916,37066915,38638672,38638673,38638674,38638675,37066919,38638672,38100188,38100189,37066916"
                   >IOS</a
                 >
               </button>
@@ -122,7 +122,7 @@
             <div id="mobile-menu-3" class="hidden">
               <div class="space-y-1 px-2 pb-3">
                 <a
-                  href="melonapp://play?cType=1&menuId=1000002721&cList=38100188,38100189,38100190,38100191,38100192"
+                  href="melonapp://play?cType=1&menuId=1000002721&cList=38638672,38638673,38638674,38638675,37066919"
                   ><button
                     class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300 mb-2"
                     type="button"
@@ -131,7 +131,7 @@
                   </button></a
                 >
                 <a
-                  href="melonapp://play?cType=1&menuId=1000002721&cList=38100188,38100189,38100193,38100194,38100195"
+                  href="melonapp://play?cType=1&menuId=1000002721&cList=38638672,38100188,38100189,37066916,37066915"
                   ><button
                     class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300 mb-2"
                     type="button"
@@ -140,7 +140,7 @@
                   </button></a
                 >
                 <a
-                  href="melonapp://play?cType=1&menuId=1000002721&cList=38100188,38100189,38100196,38100197,38100198"
+                  href="melonapp://play?cType=1&menuId=1000002721&cList=38638672,38638673,38638674,38638675,37066919"
                   ><button
                     class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300 mb-2"
                     type="button"
@@ -149,7 +149,7 @@
                   </button></a
                 >
                 <a
-                  href="melonapp://play?cType=1&menuId=1000002721&cList=38100188,38100189,38100190,38100192"
+                  href="melonapp://play?cType=1&menuId=1000002721&cList=38638672,38100188,38100189,37066916"
                   ><button
                     class="w-full text-xl border border-gray-300 p-2 rounded-lg text-center hover:bg-green-300"
                     type="button"
@@ -188,7 +188,7 @@
           <!-- 지니 1번의 내부 -->
           <nav class="">
             <a
-              href="cromegenie://scan/?landing_type=31&landing_target=108065466;108065467;108065468;108065469;108065470;108065466;108065467;108065470;108065472;108065473;108065466;108065467;108065474;108065475;108065476;108065466;108065467;108065468;108065470;"
+              href="cromegenie://scan/?landing_type=31&landing_target=109332031;109332032;109332033;109332034;104916263;109332031;108065466;108065467;104916260;84625204;109332031;109332032;109332033;109332034;104916263;109332031;108065466;108065467;104916260;"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-sky-300"
                 type="button"
@@ -201,7 +201,7 @@
           <!-- 지니 2번의 내부 -->
           <nav class="">
             <a
-              href="ktolleh00167://landing/?landing_type=31&landing_target=108065466;108065467;108065468;108065469;108065470;108065466;108065467;108065470;108065472;108065473;108065466;108065467;108065474;108065475;108065476;108065466;108065467;108065468;108065470;"
+              href="ktolleh00167://landing/?landing_type=31&landing_target=109332031;109332032;109332033;109332034;104916263;109332031;108065466;108065467;104916260;84625204;109332031;109332032;109332033;109332034;104916263;109332031;108065466;108065467;104916260"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-sky-300"
                 type="button"
@@ -214,7 +214,7 @@
           <!-- 지니 3번의 내부 -->
           <nav class="">
             <a
-              href="https://www.genie.co.kr/player/shareProcessV2?xgnm=108065466;108065467;108065468;108065469;108065470;108065466;108065467;108065470;108065472;108065473;108065466;108065467;108065474;108065475;108065476;108065466;108065467;108065468;108065470;"
+              href="https://www.genie.co.kr/player/shareProcessV2?xgnm=109332031;109332032;109332033;109332034;104916263;109332031;108065466;108065467;104916260;84625204;109332031;109332032;109332033;109332034;104916263;109332031;108065466;108065467;104916260"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-sky-300"
                 type="button"
@@ -251,7 +251,7 @@
           <!-- 스마트폰 버튼 -->
           <nav class="">
             <a
-              href="bugs3://app/tracks/lists?title=전체듣기&miniplay=Y&track_ids=33324395|33324396|33324397|33324398|33324399|33324395|33324396|33324400|33324401|33324402|33324395|33324396|33324403|33324404|33324405|33324395|33324396|33324397|33324399"
+              href="bugs3://app/tracks/lists?title=전체듣기&miniplay=Y&track_ids=33467017|33467018|33467019|33467020|33467017|33324395|33324396|33324402|33324401|33467017|33324396|33324402|33324401|33467017|33467018|33467019|33467020"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-orange-300"
                 type="button"
@@ -264,7 +264,7 @@
           <!-- PC 버튼 -->
           <nav class="">
             <a
-              href="https://music.bugs.co.kr/newPlayer?trackId=33324395,33324396,33324397,33324398,33324399,33324395,33324396,33324400,33324401,33324402,33324395,33324396,33324403,33324404,33324405,33324395,33324396,33324397,33324399"
+              href="https://music.bugs.co.kr/newPlayer?trackId=33467017,33467018,33467019,33467020,33467017,33324395,33324396,33324402,33324401,33467017,33324396,33324402,33324401,33467017,33467018,33467019,33467020"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-orange-300"
                 type="button"
@@ -301,7 +301,7 @@
           <!-- 메뉴 항목들 -->
           <nav class="">
             <a
-              href="vibe://listen?version=3&trackIds=87485722,87485723,87485724,87485725,87485726"
+              href="vibe://listen?version=3&trackIds=90865624,90865625,90865626,90865627,81984908"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-red-300"
                 type="button"
@@ -313,7 +313,7 @@
 
           <nav class="">
             <a
-              href="vibe://listen?version=3&trackIds=87485722,87485723,87485727,87485728,87485729"
+              href="vibe://listen?version=3&trackIds=90865624,87485722,87485723,81984905,81984904"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-red-300"
                 type="button"
@@ -325,7 +325,7 @@
 
           <nav class="">
             <a
-              href="vibe://listen?version=3&trackIds=87485722,87485723,87485730,87485731,87485732"
+              href="vibe://listen?version=3&trackIds=90865624,90865625,90865626,90865627,81984908"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-red-300"
                 type="button"
@@ -337,7 +337,7 @@
 
           <nav class="">
             <a
-              href="vibe://listen?version=3&trackIds=87485722,87485723,87485724,87485726"
+              href="vibe://listen?version=3&trackIds=90865624,87485722,87485723,81984905"
               ><button
                 class="w-full text-xl border-2 border-gray-300 p-2 rounded-lg text-center hover:bg-red-300"
                 type="button"
