@@ -250,6 +250,10 @@ export default {
         "https://pbs.twimg.com/media/GdNBQkcbgAAr2Sr?format=jpg&name=small",
         "https://pbs.twimg.com/media/GfaLUI3aQAAMerJ?format=jpg&name=small",
         "https://pbs.twimg.com/media/GfyM0C9asAAhL2Y?format=jpg&name=small",
+
+        "https://pbs.twimg.com/media/GkimyhgWQAEqmQl?format=jpg&name=small",
+        "https://pbs.twimg.com/media/GmOMwhCb0AA2HDT?format=jpg&name=small",
+        "https://pbs.twimg.com/media/Gp6aJoIawAAcABL?format=jpg&name=small",
       ],
       linksCoverit: [
         "https://drive.google.com/file/d/16mAbFOT5rOF_KWSIbi3zpwzNVOkNRw2l/view?usp=drive_link",
@@ -264,6 +268,10 @@ export default {
         "https://drive.google.com/file/d/1DbPE0EGIzB51sZYD1tb_gO-hnS_1PIRJ/view?usp=drive_link",
         "https://drive.google.com/file/d/1xCgyHGz9IBiB4PbjxzF3Q_F0yUJ5248V/view?usp=drive_link",
         "https://drive.google.com/file/d/1jJpV1VW15XPTvc7FgFKzj7g7zJKsKnrj/view?usp=drive_link",
+
+        "https://www.youtube.com/watch?v=QQNvQswB0j8&list=PLnje7IHR9mTYM5pPlNE-wpE-yyJRHIxaZ&index=12",
+        "https://www.youtube.com/watch?v=YzUflJixV_M&list=PLnje7IHR9mTYM5pPlNE-wpE-yyJRHIxaZ&index=13",
+        "https://www.youtube.com/watch?v=y6RdUMQR1j0&list=PLnje7IHR9mTYM5pPlNE-wpE-yyJRHIxaZ&index=14",
       ],
       titleCoverit: [
         "Lemon(류진)",
@@ -278,6 +286,10 @@ export default {
         "Deja vu(채령)",
         "BeMyBaby(ITZY)",
         "santa doesn't know you like i do(리아)",
+
+        "[They Long To Be] Close To You(류진)",
+        "Please Please Please(채령)",
+        "스물셋(유나)",
       ],
 
       // 생일
@@ -341,6 +353,7 @@ export default {
         "https://cdnimg.melon.co.kr/cm2/album/images/112/68/348/11268348_20230619104905_500.jpg?05b8d76fb2b054a9ac2a71f98f7d7e5c/melon/resize/282/quality/80/optimize",
         "https://cdnimg.melon.co.kr/cm2/album/images/116/55/086/11655086_20241129153157_500.jpg?84f5bfcf9a0f7be90c59c5eb1c461beb/melon/resize/282/quality/80/optimize",
         "https://cdnimg.melon.co.kr/cm2/album/images/116/74/761/11674761_20241220115522_500.jpg?a5e3df25029168a5d54c704863dd2522/melon/resize/282/quality/80/optimize",
+        "https://cdnimg.melon.co.kr/cm2/album/images/116/70/657/11670657_20241219110358_500.jpg?YUV444/melon/resize/260",
       ],
       linksOst: [
         "https://www.melon.com/album/detail.htm?albumId=11340221",
@@ -350,6 +363,7 @@ export default {
         "https://www.melon.com/song/detail.htm?songId=36478156",
         "https://www.melon.com/song/detail.htm?songId=38277600",
         "https://www.melon.com/song/detail.htm?songId=38375625",
+        "https://www.melon.com/song/detail.htm?songId=38351712",
       ],
       titleOst: [
         "SUPERPOWERS",
@@ -359,6 +373,7 @@ export default {
         "수백날 수천밤",
         "Why Not",
         "우리 다시 헤어지는 일은 없기로 해요",
+        "21",
       ],
 
       // 기타
