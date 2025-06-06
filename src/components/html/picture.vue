@@ -102,7 +102,8 @@ export default {
           "https://drive.google.com/drive/u/1/folders/1LHaJkhbXdjJH4T4qn1BuxsacEWe2WcCn",
           "https://drive.google.com/drive/u/1/folders/1QSWTVdM5eF6VuIoXfDO4yYz0VgLJXpK8",
           "https://drive.google.com/drive/folders/199s3mh61uXKhc9hBLDmBA1VStMQRsMOr",
-          "https://drive.google.com/drive/u/1/folders/1-Cd-flVJyJf2UdEiz6oxbGw1b2oyRK05"
+          "https://drive.google.com/drive/u/1/folders/1-Cd-flVJyJf2UdEiz6oxbGw1b2oyRK05",
+          "https://drive.google.com/drive/u/1/folders/1C7B4tnEQgj4wsFNsPmuRhrukNlB__FHI",
         ],
         lia: [
           "https://drive.google.com/drive/u/1/folders/1V86E5DE6ZJSU954Su1YdJF0kvNZADWoJ",
@@ -189,7 +190,8 @@ export default {
         "10. 케이크",
         "11. 언터쳐블",
         "12. GOLD",
-        "13. Air"
+        "13. Air",
+        "14. 걸윌걸",
       ],
     };
   },

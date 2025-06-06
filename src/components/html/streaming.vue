@@ -3,7 +3,7 @@
   <body class="h-screen flex flex-col items-center justify-start">
     <!-- 로고 영역 -->
     <div class="logo-wrapper w-full text-center mt-24 mb-10">
-      <p class="text-3xl text-black font-bold">TEST</p>
+      <p class="text-3xl text-black font-bold">AIR</p>
     </div>
 
     <!-- 메인 버튼 섹션 -->
