@@ -37,6 +37,7 @@ function menuOpen() {
         <router-link to="/broadcast">공방참여</router-link>
         <router-link to="/cheer">응원법</router-link>
         <router-link to="/streaming">스밍리스트</router-link>
+        <router-link to="/survey">최애찾기</router-link>
       </div>
     </nav>
   </section>
