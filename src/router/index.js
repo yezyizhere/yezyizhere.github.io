@@ -46,6 +46,11 @@ const router = createRouter({
       name: 'streaming',
       component: () => import('@/pages/Streaming.vue'),
     },
+    {
+      path: '/survey',
+      name: 'survey',
+      component: () => import('@/pages/Survey.vue'),
+    },
   ],
 })
 
