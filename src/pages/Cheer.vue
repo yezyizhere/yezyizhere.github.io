@@ -33,7 +33,7 @@ const items = [
     label: '18',
   },
   {
-    albumImage: '/picture/album/kissandtell.jpg',
+    albumImage: '/new/picture/album/kissandtell.jpg',
     albumName: 'Kiss&Tell',
     label: '17',
   },
@@ -43,7 +43,7 @@ const items = [
     label: '16',
   },
   {
-    albumImage: '/picture/album/imf.jpg',
+    albumImage: '/new/picture/album/imf.jpg',
     albumName: 'Imaginary Friend',
     label: '15',
   },
@@ -53,7 +53,7 @@ const items = [
     label: '14',
   },
   {
-    albumImage: '/picture/album/mrv.jpg',
+    albumImage: '/new/picture/album/mrv.jpg',
     albumName: 'Mr.Vampire',
     label: '13',
   },
@@ -63,12 +63,12 @@ const items = [
     label: '12',
   },
   {
-    albumImage: '/picture/album/untouch.jpg',
+    albumImage: '/new/picture/album/untouch.jpg',
     albumName: 'Untouchable',
     label: '11',
   },
   {
-    albumImage: '/picture/album/nmb.jpg',
+    albumImage: '/new/picture/album/nmb.jpg',
     albumName: 'None of my Business',
     label: '10',
   },
