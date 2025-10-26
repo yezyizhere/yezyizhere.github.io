@@ -46,16 +46,17 @@ const boxItems = [
 
 // 음반
 const cd = [
-  { cdname: '사운드웨이브', cdurl: 'https://bit.ly/3H5rORC' },
-  { cdname: '메이크스타', cdurl: 'https://bit.ly/4mj9DID' },
-  { cdname: '뮤직코리아', cdurl: 'https://bit.ly/3S0X3zJ' },
-  { cdname: '위드뮤', cdurl: 'https://bit.ly/4ddcsGL' },
-  { cdname: 'YES 24', cdurl: 'https://bit.ly/3GLzxVb' },
-  { cdname: '알라딘', cdurl: 'https://bit.ly/4iVguoA' },
-  { cdname: '뮤직플랜트', cdurl: 'https://bit.ly/4k9yi0R' },
-  { cdname: '블루드림', cdurl: 'https://bit.ly/3YERDOy' },
-  { cdname: '애플뮤직', cdurl: 'https://bit.ly/44tHpEt' },
-  { cdname: 'FANS SHOP', cdurl: 'https://bit.ly/44zzAgv' },
+  { cdname: '사웨', cdurl: 'https://bit.ly/3WMgDBW' },
+  { cdname: '메이크스타', cdurl: 'https://bit.ly/3Lfd98x' },
+  { cdname: '뮤직코리아', cdurl: 'https://bit.ly/42M7DQW' },
+  { cdname: '위드뮤', cdurl: 'https://bit.ly/4os8SwZ' },
+  { cdname: 'YES24', cdurl: 'https://bit.ly/42KaLNe' },
+  { cdname: '알라딘', cdurl: 'https://bit.ly/3WacdVq' },
+  { cdname: '뮤직플랜트', cdurl: 'https://bit.ly/47gT2hL' },
+  { cdname: '블루드림', cdurl: 'https://bit.ly/3WdE0UW' },
+  { cdname: '애플뮤직', cdurl: 'https://www.applemusic.co.kr/shop/shopbrand.html?search=itzy&refer=https:' },
+  { cdname: '카카오톡', cdurl: 'https://bit.ly/48AVgLc' },
+  { cdname: 'JYP FANS', cdurl: 'https://bit.ly/4heB1VT' },
 ]
 </script>
 
