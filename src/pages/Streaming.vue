@@ -149,7 +149,7 @@ const boxStyles = ['hover:bg-green-500 border-green-500 text-green-500 hover:tex
       <!-- 새로고침/상단글 -->
       <button @click="Refresh" class="flex flex-col pb-5">
         <div class="text-2xl text-center mt-10">원클릭 스밍리스트</div>
-        <div class="text-xl text-center text-red-400">Girls Will Be Girls</div>
+        <div class="text-xl text-center text-gray-600">Tunnel Vision</div>
         <div class="text-gray-500 text-center">↑ 누르면 새로고침</div>
       </button>
 
