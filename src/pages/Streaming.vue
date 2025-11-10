@@ -67,7 +67,7 @@ const vibeMap = {
 }
 
 // 스포티파이
-const spotify = 'https://open.spotify.com/playlist/3u1p3qFYWZF9lNrpSXBffW?si=1676186df0f9475d&nd=1&dlsi=0f407d44db5e4266'
+const spotify = 'https://open.spotify.com/playlist/3EVGoGlQ3eSfu7NPmbq1LX?si=0GoP-Iw_QravvC6anKgbSg&nd=1&dlsi=64872b7bedee46ac'
 
 /*************************************************************************** 고정사항 **************************************************************************/
 // 멜론 PC
