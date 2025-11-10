@@ -2,7 +2,7 @@
 import Header from '@/layout/Header.vue'
 
 const selectSeason = [
-  { name: '배경화면', url: 'https://drive.google.com/drive/u/0/folders/1SDZYsASrvhAc0R3ZjpyEgPjP-E13OVYr' },
+  { name: '14. 터널비전', url: 'https://drive.google.com/drive/u/1/folders/1OMzrHbtIri_1mnNjtWYB63Pq3u7Y6Rj0' },
   { name: '13. GWBG', url: 'https://drive.google.com/drive/u/0/folders/1C7B4tnEQgj4wsFNsPmuRhrukNlB__FHI' },
   { name: '12. 에어', url: 'https://drive.google.com/drive/u/0/folders/1-Cd-flVJyJf2UdEiz6oxbGw1b2oyRK05' },
   { name: '11. 골드', url: 'https://drive.google.com/drive/folders/199s3mh61uXKhc9hBLDmBA1VStMQRsMOr?usp=drive_link' },
